@@ -1,0 +1,64 @@
+.margened{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+.update{
+  /* background-color: rgb(16, 117, 212); */
+  padding: 8px;
+  margin-right: 2px;
+}
+.delete{
+  /* background-color:rgb(231, 54, 23); */
+  padding: 8px;
+  margin-right: 2px;
+}
+.added{
+  padding: 8px;
+}
+
+.centered {
+  text-align: center;
+}
+.title{
+  color: #33415C;
+  font-family: "Great Vibes", cursive;
+  font-size: 50px;
+  line-height: 80px;
+  font-weight: normal;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  margin-top: 25px;
+  text-align: center;
+  text-shadow: 0 1px 1px #fff; 
+}
+.role{
+  display: inline-block;
+    padding: 0.25em 0.4em;
+    font-size: 75%;
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem !important;
+}
+.roleUser{
+  color: #34c38f ;
+  background-color: rgba(52, 195, 143, 0.18);
+}
+
+.roleAdmin{
+  color:  #50a5f1 !important;
+  background-color: rgba(131, 106, 244, 0.18)
+}
+.modal-title{
+  color: #50a5f1;
+  text-align: center;
+}
+.label1 {
+  color: rgb(31, 31, 129);
+}
+
+
+

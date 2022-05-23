@@ -1,0 +1,17 @@
+<div class="container">
+    <h3 style="margin: 50px auto;" class="text-secondary">Components</h3>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th class="text-primary" scope="col">Component</th>
+          <th class="text-primary" scope="col">State</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let c of components">
+          <td>{{c.ComponentName}}</td>
+          <td>{{ c.State }}</td>
+        </tr>
+      </tbody>
+    </table>
+</div>

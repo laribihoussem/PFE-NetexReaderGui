@@ -1,0 +1,110 @@
+<div class="container" style="margin-top: 100px;">
+    <div class="row centered">
+        <div class="col-md-4">
+            <div class="btn-group me-3" >
+                <button type="button" class="btn btn-secondary">Choose data input format</button>
+                <div class="btn-group dropdown dropright" role="group" aria-label="Button group with nested dropdown">
+                  <button class="btn btn-outline-primary dropdown-toggle"  data-toggle="dropdown">Drop me</button>
+                  <div class="dropdown-menu">
+                    <div  class="dropdown-item">
+                        <div class="form-check">    
+                              <input type="radio" class="form-check-input" name="optradio1" value="netex" [(ngModel)]="radioData">NETEX
+                        </div>
+                    </div>
+                    <div  class="dropdown-item">
+                      <div class="form-check">    
+                            <input type="radio" class="form-check-input" name="optradio1" value="xml" [(ngModel)]="radioData">XML
+                      </div>
+                    </div>
+                    <div  class="dropdown-item">
+                      <div class="form-check">    
+                            <input type="radio" class="form-check-input" name="optradio1" value="json" [(ngModel)]="radioData">JSON
+                      </div>
+                    </div>
+                    <div  class="dropdown-item">
+                      <div class="form-check">    
+                            <input type="radio" class="form-check-input" name="optradio1" value="csv" [(ngModel)]="radioData">CSV
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- <p> The file input format is {{ radioData }}</p> -->
+            </div>
+        </div>
+        <div class="col-md-4">
+          <div class="btn-group me-3" >
+              <button type="button" class="btn btn-secondary">Choose data output format</button>
+              <div class="btn-group dropdown dropright" role="group" aria-label="Button group with nested dropdown">
+                <button class="btn btn-outline-primary dropdown-toggle"  data-toggle="dropdown">Drop me</button>
+                <div class="dropdown-menu">
+                  <div  class="dropdown-item">
+                      <div class="form-check">    
+                            <input type="radio" class="form-check-input" name="optradio2" value="netex" [(ngModel)]="radioDataOutput">NETEX
+                      </div>
+                  </div>
+                  <div  class="dropdown-item">
+                    <div class="form-check">    
+                          <input type="radio" class="form-check-input" name="optradio2" value="xml" [(ngModel)]="radioDataOutput">XML
+                    </div>
+                  </div>
+                  <div  class="dropdown-item">
+                    <div class="form-check">    
+                          <input type="radio" class="form-check-input" name="optradio2" value="json" [(ngModel)]="radioDataOutput">JSON
+                    </div>
+                  </div>
+                  <div  class="dropdown-item">
+                    <div class="form-check">    
+                          <input type="radio" class="form-check-input" name="optradio2" value="csv" [(ngModel)]="radioDataOutput">CSV
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <p> The file output format is {{ radioDataOutput }}</p> -->
+          </div>  
+      </div>
+      <div class="col-md-4">
+        <div class="btn-group me-3" >
+            <button type="button" class="btn btn-secondary">Choose Destination</button>
+            <div class="btn-group dropdown dropright" role="group" aria-label="Button group with nested dropdown">
+              <button class="btn btn-outline-primary dropdown-toggle"  data-toggle="dropdown">Drop me</button>
+                <div class="dropdown-menu">
+                  <div  class="dropdown-item" *ngFor="let dest of destinations">
+                    <div class="form-check">    
+                          <input type="radio" class="form-check-input radios" name="optradio3" value="{{dest.name}}" [(ngModel)]="radioDestination">{{dest.name}}
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!-- <p> The file output format is {{ radioDataOutput }}</p> -->
+        </div>  
+    </div>
+    </div>
+</div>
+
+
+<div class="container margened">
+    <div class="row">
+        <ngx-dropzone style="background-color: #efefef;" #file (change)="onSelect($event)">
+            <ngx-dropzone-label>Drop File here OR browse!</ngx-dropzone-label>
+            <ngx-dropzone-preview style="background-color: #979DAC;" *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
+                <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+            </ngx-dropzone-preview>
+        </ngx-dropzone>
+    </div>
+</div>
+<div class="centered">
+    <button class="button-34" role="button" (click)="onAddFile()">Submit</button>
+    <button class="button-34" role="button" (click)="onVisualizeFile()">Visualize</button>
+</div>
+
+<div *ngIf="show" class="container">
+    <div class="row">
+        <textarea class="textarea1" name="" id="json" cols="30" rows="30" style="border:none;">{{ fileContent }}</textarea>
+    </div>
+    <!-- <button class="btn btn-primary" style="text-align: right;" *ngIf="show" (click)="prettify()">prettify</button> -->
+</div>
+
+
+
+
+

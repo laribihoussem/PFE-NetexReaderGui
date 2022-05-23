@@ -1,0 +1,14 @@
+<div class="container">
+  <div><h2 class="title" style="text-align: center;">Add a new destination</h2></div>
+    <div class="row" style="margin-top: 100px;">
+        <div class="input-group mb-3" style="margin: auto;
+        width: 50%;
+        border: 3px solid gray;
+        padding: 10px;">
+            <input #name type="text" class="form-control" placeholder="Enter destination name" aria-label="Enter destination name" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" (click)="addNewDestination(name.value)" type="button">Add</button>
+            </div>
+          </div>
+    </div>
+</div>

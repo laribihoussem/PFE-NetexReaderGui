@@ -1,0 +1,8 @@
+
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëÙ…­úÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(†ö×
+r	java:S116"XRename this field "date_creation" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±Ê”‹øÿÿÿÿ
+R
+java:S1128"5Remove this unused import 'lombok.NoArgsConstructor'.(¸¨›8µÃŠ‰0
+K
+java:S1128"/Remove this unused import 'java.sql.Timestamp'.(èò½+8¶ÃŠ‰0

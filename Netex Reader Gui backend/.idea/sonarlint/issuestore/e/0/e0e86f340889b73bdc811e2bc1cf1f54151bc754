@@ -1,0 +1,17 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(·òŒÛüÿÿÿÿ
+a
+java:S22593"FA "NullPointerException" could be thrown; "fileType" is nullable here.(¶¯Ûøÿÿÿÿ
+d
+java:S2095B"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(Âî¢·
+Q	java:S125("<This block of commented-out lines of code should be removed.(‡Ÿ½Ø
+V	java:S125?"<This block of commented-out lines of code should be removed.(ôÆ¡‹şÿÿÿÿ
+Z
+java:S1854P"?Remove this useless assignment to local variable "contentType".(ğô¦øıÿÿÿÿ
+U
+java:S1854N":Remove this useless assignment to local variable "fileDb".(ù Õıÿÿÿÿ
+F
+java:S1481N"+Remove this unused "fileDb" local variable.(ù Õıÿÿÿÿ
+K
+java:S1481P"0Remove this unused "contentType" local variable.(ğô¦øıÿÿÿÿ
+V	java:S125n"<This block of commented-out lines of code should be removed.(¯±Ÿùÿÿÿÿ

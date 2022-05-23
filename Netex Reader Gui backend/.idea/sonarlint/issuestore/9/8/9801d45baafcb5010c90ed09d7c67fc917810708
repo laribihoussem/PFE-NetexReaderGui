@@ -1,0 +1,16 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(å¯×âüÿÿÿÿ
+w	java:S116"]Rename this field "OrganisationalUnit" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–æƒ·úÿÿÿÿ
+k	java:S116"QRename this field "Notice" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜§®âùÿÿÿÿ
+v	java:S116"\Rename this field "ResponsibilitySet" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßÎ—Šÿÿÿÿÿ
+q	java:S116"WRename this field "TypeOfEntity" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(îÏŽÔüÿÿÿÿ
+m	java:S116"SRename this field "Operator" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶šàãüÿÿÿÿ
+q	java:S116 "WRename this field "SchematicMap" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿ•µîûÿÿÿÿ
+d	java:S116""ORename this field "Line" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(þ¿‚ß
+k	java:S116$"WRename this field "GroupOfLines" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(öˆ¥b
+z	java:S116&"`Rename this field "AvailabilityCondition" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘©¤‹ùÿÿÿÿ
+l	java:S116("RRename this field "Network" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ž¼Ûæúÿÿÿÿ
+l	java:S116*"RRename this field "LineRef" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üÛÏÕøÿÿÿÿ
+i	java:S116,"TRename this field "StopPlace" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šñ¸š
+c	java:S116."ORename this field "Quay" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Þàó	
+q	java:S1160"\Rename this field "StopPlaceEntrance" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÍÃÂÜ

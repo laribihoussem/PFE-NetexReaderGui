@@ -1,0 +1,15 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(å¯×âüÿÿÿÿ
+q	java:S116"WRename this field "ValidBetween" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÉàÅàıÿÿÿÿ
+i	java:S116"ORename this field "Name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É¬­Áøÿÿÿÿ
+i	java:S116"TRename this field "ShortName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬»ÄÖ
+m	java:S116 "XRename this field "TransportMode" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²§ÂŸ
+u	java:S116""[Rename this field "TransportSubmode" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶ÜÙ¼úÿÿÿÿ
+o	java:S116$"URename this field "PublicCode" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãµ„çúÿÿÿÿ
+p	java:S116&"VRename this field "PrivateCode" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(š“²´şÿÿÿÿ
+k	java:S116("VRename this field "OperatorRef" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²‡
+r	java:S116,"XRename this field "TypeOfLineRef" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”öæšúÿÿÿÿ
+u	java:S116."`Rename this field "RepresentedByGroupRef" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê’´Å
+l	java:S1160"WRename this field "Presentation" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹¾Âë
+v	java:S1162"bRename this field "AlternativePresentation" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Âø¥F
+|	java:S1164"bRename this field "AccessibilityAssessment" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°Í£Íûÿÿÿÿ

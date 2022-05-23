@@ -1,0 +1,5 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(å¯×âüÿÿÿÿ
+i	java:S116"ORename this field "Name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É¬­Áøÿÿÿÿ
+m	java:S116"SRename this field "ImageUri" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨„à²üÿÿÿÿ
+v	java:S116"\Rename this field "DepictedObjectRef" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹ûðšýÿÿÿÿ

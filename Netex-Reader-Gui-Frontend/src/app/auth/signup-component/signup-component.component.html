@@ -1,0 +1,68 @@
+<body class="form-v5">
+	<div class="page-content">
+		<form [formGroup]="registerForm">
+			<div class="form-v5-content">
+				<div class="form-detail">
+					<h2>Register Account Form</h2>
+					<div class="form-row">
+						<label for="irst-name"> first name</label>
+						<input [class.is-invalid]="getElements.firstName.invalid && getElements.firstName.touched"
+						#firstName type="text" name="first-name" id="first-name" class="input-text" placeholder="Your Name" formControlName="firstName" required>
+						<div *ngIf="(getElements.firstName.touched && getElements.firstName.invalid)">
+							<small *ngIf="getElements.phoneNumber.errors?.required" class="text-danger">required</small>
+					 	</div>
+					</div>
+					<div class="form-row">
+						<label for="full-name">last name</label>
+						<input [class.is-invalid]="getElements.lastName.invalid && getElements.lastName.touched"
+						 #lastName type="text" name="full-name" id="full-name" class="input-text" placeholder="Your last Name" formControlName="lastName" required>
+						<div *ngIf="(getElements.lastName.touched && getElements.lastName.invalid)">
+							<small *ngIf="getElements.lastName.errors?.required" class="text-danger">required</small>
+					 	</div>
+					</div>
+					<div class="form-row">
+						<label for="your-email">Your Email</label>
+						<input [class.is-invalid]="getElements.email.invalid && getElements.email.touched"
+						 #email type="email" name="your-email" id="your-email" class="input-text" placeholder="Your Email" formControlName="email" required>
+						 <div *ngIf="(getElements.email.invalid && getElements.email.touched) || getElements.email.dirty">
+							<small *ngIf="getElements.email.errors?.required" class="text-danger">email is required</small>
+							<!--question mark(?) is a safe navigation operator-->
+							<small *ngIf="getElements.email.errors?.pattern" class="text-danger">Please provide a valid email address</small>
+						</div>  
+					</div>
+					<div class="form-row">
+						<label for="password">Password</label>
+						<input [class.is-invalid] = "getElements.password.invalid && getElements.password.touched"
+						#pwd type="password" name="password" id="password" class="input-text" placeholder="Your Password" formControlName="password" required>
+						<div *ngIf="(getElements.password.touched && getElements.password.invalid)">
+							<small *ngIf="getElements.password.errors?.required" class="text-danger">password is required</small>
+							<!--question mark(?) is a safe navigation operator-->
+							<small *ngIf="getElements.password.errors?.minlength" class="text-danger">Password length isn't enough</small>
+					 	</div>
+					</div>
+					<div class="form-row">
+						<label for="repeat-password">Repeat Password</label>
+						<input [class.is-invalid] = "getElements.confirmPassword.invalid && getElements.confirmPassword.touched"
+						type="password" name="repeat-password" id="repeat-password" class="input-text" placeholder="Repeat Password" formControlName="confirmPassword" required>
+						<div *ngIf="(getElements.confirmPassword.touched && getElements.confirmPassword.invalid)">
+							<small *ngIf="getElements.confirmPassword.errors?.required" class="text-danger">required</small>
+							<small *ngIf="getElements.confirmPassword.errors?.confirmedValidator" class="text-danger">Password and Confirm Password must be match.</small>
+					 	</div>
+					</div>
+					<div class="form-row">
+						<label for="number">phone Number</label>
+						<input [class.is-invalid] = "getElements.phoneNumber.invalid && getElements.phoneNumber.touched"
+						#phoneNumber type="text" name="number" id="number" class="input-text" placeholder="Your phone Number" formControlName="phoneNumber" required>
+						<div *ngIf="(getElements.phoneNumber.touched && getElements.phoneNumber.invalid)">
+							<small *ngIf="getElements.phoneNumber.errors?.required" class="text-danger">required</small>
+							<small *ngIf="getElements.phoneNumber.errors?.minlength || getElements.phoneNumber.errors?.maxlength" class="text-danger">not correct phone number</small>
+					 	</div>
+					</div>
+					<div class="form-row-last">
+						<input type="submit" (click)="onRegister(firstName.value,lastName.value,email.value,pwd.value, phoneNumber.value)" [disabled]="!registerForm.valid" name="register" class="register" value="Register">
+					</div>
+				</div>
+			</div>
+		</form>	
+	</div>
+</body>

@@ -1,0 +1,11 @@
+
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(«Ñ›ª
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(·òŒÛüÿÿÿÿ
+d
+java:S20951"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(Âî¢·
+d
+java:S2095V"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(Âî¢·
+e
+java:S2674'"JCheck the return value of the "read" call to see how many bytes were read.(€ÖŽ¨ÿÿÿÿÿ
+e
+java:S2674J"JCheck the return value of the "read" call to see how many bytes were read.(€ÖŽ¨ÿÿÿÿÿ

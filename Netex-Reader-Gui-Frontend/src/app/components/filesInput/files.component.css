@@ -1,0 +1,47 @@
+
+/* CSS */
+.button-34 {
+  background: #5E5DF0;
+  border-radius: 999px;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 15px 35px;
+  margin: 0 30px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+  text-align: center;
+}
+
+.centered{
+    text-align: center;
+    padding: 20px;
+    margin: 40px;
+}
+.margened{
+    margin-top: 40px;
+}
+.textarea1{
+  background-color: #ced4da;
+}
+
+.radios{
+  border-color: #50a5f1;
+  background-color: #FFFFFF;
+}
+
+.radios:checked {
+  background-color: #50a5f1;
+}

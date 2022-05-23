@@ -1,0 +1,8 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(å¯×âüÿÿÿÿ
+i	java:S116"ORename this field "Name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É¬­Áøÿÿÿÿ
+m	java:S116"SRename this field "Centroid" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µâ”ßüÿÿÿÿ
+r	java:S116 "XRename this field "PostalAddress" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëİÀ®ûÿÿÿÿ
+m	java:S116""SRename this field "Landmark" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìŞıÜøÿÿÿÿ
+m	java:S116$"XRename this field "ParentSiteRef" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úƒé—
+r	java:S116*"XRename this field "StopPlaceType" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥Ë‚ûÿÿÿÿ

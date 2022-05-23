@@ -1,0 +1,8 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(å¯×âüÿÿÿÿ
+k	java:S116"VRename this field "HouseNumber" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(şÓÃ¿
+l	java:S116"WRename this field "AddressLine1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢¿Ò†
+k	java:S116"QRename this field "Street" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–Ğá‹ÿÿÿÿÿ
+i	java:S116"ORename this field "Town" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õÎ¼üÿÿÿÿ
+h	java:S116"SRename this field "PostCode" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨àÚğ
+v	java:S116"\Rename this field "PostCodeExtension" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹øª—ÿÿÿÿÿ

@@ -1,0 +1,4 @@
+
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(á­ü±
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(å¯×âüÿÿÿÿ
+p	java:S116"\Rename this field "EquipmentPlaceRef" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òšÉ

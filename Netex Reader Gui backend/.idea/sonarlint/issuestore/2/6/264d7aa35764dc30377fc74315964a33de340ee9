@@ -1,0 +1,10 @@
+
+b	java:S112	"FDefine and throw a dedicated exception instead of using a generic one.(³æ‘Ğ8Îõ›Ò‰0
+g	java:S112
+"FDefine and throw a dedicated exception instead of using a generic one.(åÁ´üúÿÿÿÿ8ãâÍÇŠ0
+g	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(‚µ¡‡ûÿÿÿÿ8ÿüÍÇŠ0
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(·òŒÛüÿÿÿÿ
+n
+java:S1128"LRemove this unused import 'org.springframework.web.multipart.MultipartFile'.(ôŸœÿÿÿÿÿ8“ÓÄÇŠ0
+R
+java:S1128"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ8„ıÍÇŠ0

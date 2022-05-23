@@ -1,0 +1,5 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(å¯×âüÿÿÿÿ
+i	java:S116"ORename this field "Mark" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Äˆ¥øÿÿÿÿ
+l	java:S116"RRename this field "UrlMark" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚‹”øÿÿÿÿ
+t	java:S116"ZRename this field "TypeOfNoticeRef" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­‡üÿÿÿÿ

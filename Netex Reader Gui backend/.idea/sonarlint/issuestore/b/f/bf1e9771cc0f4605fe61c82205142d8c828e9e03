@@ -1,0 +1,4 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(å¯×âüÿÿÿÿ
+j	java:S116"URename this field "BusSubmode" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œ·ÛÜ
+k	java:S116"VRename this field "RailSubmode" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Şïø

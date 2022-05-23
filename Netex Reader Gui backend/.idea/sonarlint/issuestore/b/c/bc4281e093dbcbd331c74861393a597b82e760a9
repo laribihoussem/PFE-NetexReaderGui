@@ -1,0 +1,30 @@
+
+g	java:S101&"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(­êıúÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(·òŒÛüÿÿÿÿ
+d
+java:S2095F"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(Âî¢·
+d
+java:S2095m"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(Âî¢·
+e
+java:S26747"JCheck the return value of the "read" call to see how many bytes were read.(€Ö¨ÿÿÿÿÿ
+]	java:S125:"<This block of commented-out lines of code should be removed.(ôÆ¡‹şÿÿÿÿ8ÍÄØÈŠ0
+X	java:S125="<This block of commented-out lines of code should be removed.(ÛÖ˜ó8Ÿå–‹0
+X	java:S125?"<This block of commented-out lines of code should be removed.(‚§¾ÿ8ƒø–‹0
+]	java:S125A"<This block of commented-out lines of code should be removed.(Ê×Ïşÿÿÿÿ8ƒŠ–‹0
+X	java:S125D"<This block of commented-out lines of code should be removed.(Ø¥´ë8ë–‹0
+V
+java:S1854\";Remove this useless assignment to local variable "charset".(©±û¼şÿÿÿÿ
+G
+java:S1481\",Remove this unused "charset" local variable.(©±û¼şÿÿÿÿ
+[
+java:S1858a"@"toJson" returns a string, there's no need to call "toString()".(·¢ªüÿÿÿÿ
+O
+java:S1874}"4Remove this use of "OutputFormat"; it is deprecated.(Ò‘ ¨úÿÿÿÿ
+O
+java:S1874}"4Remove this use of "OutputFormat"; it is deprecated.(Ò‘ ¨úÿÿÿÿ
+Q
+java:S1874ƒ"5Remove this use of "XMLSerializer"; it is deprecated.(Í›³½üÿÿÿÿ
+Q
+java:S1874ƒ"5Remove this use of "XMLSerializer"; it is deprecated.(Í›³½üÿÿÿÿ
+R	java:S125ˆ"<This block of commented-out lines of code should be removed.(ÿÒÑŠ
+R	java:S125¦"<This block of commented-out lines of code should be removed.(í¿×Ç

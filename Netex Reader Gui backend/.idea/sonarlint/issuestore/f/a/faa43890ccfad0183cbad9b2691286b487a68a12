@@ -1,0 +1,8 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(å¯×âüÿÿÿÿ
+i	java:S116"ORename this field "Name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É¬­Áøÿÿÿÿ
+i	java:S116"TRename this field "ShortName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬»ÄÖ
+p	java:S116"VRename this field "PrivateCode" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(š“²´þÿÿÿÿ
+m	java:S116"SRename this field "Centroid" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µâ”ßüÿÿÿÿ
+l	java:S116"RRename this field "IsEntry" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘©®„ÿÿÿÿÿ
+f	java:S116"QRename this field "IsExit" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âÔ¥ø

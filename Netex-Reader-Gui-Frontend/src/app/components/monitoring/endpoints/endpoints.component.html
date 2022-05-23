@@ -1,0 +1,21 @@
+<div class="container">
+    <h3 style="margin: 50px auto;" class="text-secondary">Endpoints</h3>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th class="text-primary" scope="col">state</th>
+            <th class="text-primary" scope="col">Endpoint URI</th>
+            <th class="text-primary" scope="col">Singleton</th>
+            <th class="text-primary" scope="col">Endpoint base uri</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let ep of endpoints">
+            <td>{{ep.State}}</td>
+            <td>{{ep.EndpointUri}}</td>
+            <td>{{ep.Singleton}}</td>
+            <td>{{ep.EndpointBaseUri}}</td>
+          </tr>
+          </tbody>
+        </table>
+</div>

@@ -1,0 +1,4 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(å¯×âüÿÿÿÿ
+p	java:S116"[Rename this field "NoticeAssignment" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(à¦ˆŸ
+y	java:S116"_Rename this field "NoticeAssignmentView" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿ†¯³þÿÿÿÿ

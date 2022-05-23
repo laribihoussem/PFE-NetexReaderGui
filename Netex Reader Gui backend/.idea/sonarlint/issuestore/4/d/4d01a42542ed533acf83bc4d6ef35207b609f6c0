@@ -1,0 +1,5 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(å¯×âüÿÿÿÿ
+u	java:S116"[Rename this field "WheelchairAccess" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µ–Šâýÿÿÿÿ
+z	java:S116"`Rename this field "AudibleSignsAvailable" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥÷½›ùÿÿÿÿ
+t	java:S116"_Rename this field "VisualSignsAvailable" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ž›òÄ

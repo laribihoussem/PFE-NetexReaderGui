@@ -1,0 +1,5 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(å¯×âüÿÿÿÿ
+t	java:S116"_Rename this field "ConditionedObjectRef" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½×é
+m	java:S116"SRename this field "FromDate" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šúÌÏûÿÿÿÿ
+f	java:S116"QRename this field "ToDate" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŒİÑõ

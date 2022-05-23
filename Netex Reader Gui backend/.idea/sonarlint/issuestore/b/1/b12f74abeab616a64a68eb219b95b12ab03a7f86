@@ -1,0 +1,38 @@
+
+r
+java:S1192"VDefine a constant instead of duplicating this literal "netex-data-loader-job" 3 times.(–ÎÌÕúÿÿÿÿ
+d
+java:S1192~"NDefine a constant instead of duplicating this literal "files/output/" 3 times.(åè§Ö
+i
+java:S1192e"TDefine a constant instead of duplicating this literal "PublicationDelivery" 4 times.(¥ñ¸;
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(·òŒÛüÿÿÿÿ
+d
+java:S2095"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(Âî¢·
+e
+java:S2095Ë"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(Âî¢·
+e
+java:S2095§"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(Âî¢·
+[
+java:S1858r"@"toJson" returns a string, there's no need to call "toString()".(ÔÌ¦ùÿÿÿÿ
+Q	java:S125}"<This block of commented-out lines of code should be removed.(èÑã
+Y	java:S125™"<This block of commented-out lines of code should be removed.(ï©‰Î8²ˆ¡Æ‹0
+\
+java:S1858š"@"toJson" returns a string, there's no need to call "toString()".(ÔÌ¦ùÿÿÿÿ
+?
+java:S1116"Remove this empty statement.(”î³Íÿÿÿÿÿ8öä Æ‹0
+Q	java:S125›"<This block of commented-out lines of code should be removed.(„˜‰F
+R	java:S125¥"<This block of commented-out lines of code should be removed.(èÑã
+W	java:S125²"<This block of commented-out lines of code should be removed.(½•øôÿÿÿÿÿ
+\
+java:S1858Ã"@"toJson" returns a string, there's no need to call "toString()".(ÔÌ¦ùÿÿÿÿ
+^	java:S125Ä"<This block of commented-out lines of code should be removed.(œ³Š ûÿÿÿÿ8ƒå Æ‹0
+R	java:S125É"<This block of commented-out lines of code should be removed.(èÑã
+W	java:S125Ö"<This block of commented-out lines of code should be removed.(½•øôÿÿÿÿÿ
+P
+java:S1874â"4Remove this use of "OutputFormat"; it is deprecated.(Ò‘ ¨úÿÿÿÿ
+P
+java:S1874â"4Remove this use of "OutputFormat"; it is deprecated.(Ò‘ ¨úÿÿÿÿ
+Q
+java:S1874è"5Remove this use of "XMLSerializer"; it is deprecated.(Í›³½üÿÿÿÿ
+Q
+java:S1874è"5Remove this use of "XMLSerializer"; it is deprecated.(Í›³½üÿÿÿÿ

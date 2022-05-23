@@ -1,0 +1,21 @@
+
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(šÆö
+V
+java:S46847"@Replace this persistent entity with a simple POJO or DTO object.(§›õÊ
+Q	java:S1259"<This block of commented-out lines of code should be removed.(®°ø’
+U
+java:S1854?"?Remove this useless assignment to local variable "updatedUser".(˜ù›¡
+R
+java:S1854>"7Remove this useless assignment to local variable "uri".(œÕÛÁıÿÿÿÿ
+V
+java:S4684="@Replace this persistent entity with a simple POJO or DTO object.(„¯Îı
+C
+java:S1481>"(Remove this unused "uri" local variable.(œÕÛÁıÿÿÿÿ
+F
+java:S1481?"0Remove this unused "updatedUser" local variable.(˜ù›¡
+A
+java:S1452D"&Remove usage of generic wildcard type.(ò¯÷ªıÿÿÿÿ
+V
+java:S4684J"@Replace this persistent entity with a simple POJO or DTO object.(…ÿÈç
+A
+java:S1452P"&Remove usage of generic wildcard type.(©›‘ıÿÿÿÿ

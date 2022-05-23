@@ -1,0 +1,15 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(å¯×âüÿÿÿÿ
+t	java:S116"_Rename this field "PublicationTimestamp" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(î»’–
+n	java:S116"YRename this field "ParticipantRef" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(â·‡û
+Q	java:S125"<This block of commented-out lines of code should be removed.(«ý ü
+V	java:S1251"<This block of commented-out lines of code should be removed.(Ìöâäúÿÿÿÿ
+X
+java:S1128"6Remove this unused import 'lombok.AllArgsConstructor'.(´œ¾öùÿÿÿÿ8î´âÁŠ0
+J
+java:S1128"(Remove this unused import 'lombok.Data'.(÷í«ÿÿÿÿÿ8î´âÁŠ0
+R
+java:S1128"5Remove this unused import 'lombok.NoArgsConstructor'.(¸¨›8î´âÁŠ0
+H
+java:S1128
+"+Remove this unused import 'java.util.Date'.(¸…¼ü8ï´âÁŠ0

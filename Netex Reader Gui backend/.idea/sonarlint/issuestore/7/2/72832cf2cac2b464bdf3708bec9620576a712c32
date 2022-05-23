@@ -1,0 +1,5 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(å¯×âüÿÿÿÿ
+l	java:S116"WRename this field "AddressLine1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢¿Ò†
+i	java:S116"ORename this field "Town" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õÎ¼üÿÿÿÿ
+q	java:S116"WRename this field "PostalRegion" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›ì°àÿÿÿÿÿ

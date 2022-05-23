@@ -1,0 +1,24 @@
+version: '3.1'
+services:
+  app:
+    container_name: netex-server
+    image: netex-server-latest
+    build: ./
+    ports:
+      - "8090:8090"
+    depends_on:
+      - pg
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://pg:5432/netexreadergui
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=letmein
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+  pg:
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=letmein
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=netexreadergui
+      - PG_HOST=pg

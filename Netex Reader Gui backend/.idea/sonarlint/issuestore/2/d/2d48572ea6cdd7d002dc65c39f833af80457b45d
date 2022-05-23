@@ -1,0 +1,5 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(å¯×âüÿÿÿÿ
+f	java:S116"QRename this field "Colour" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÖïûÊ
+j	java:S116"URename this field "ColourName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°÷ºæ
+o	java:S116"URename this field "TextColour" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“Òúıÿÿÿÿ

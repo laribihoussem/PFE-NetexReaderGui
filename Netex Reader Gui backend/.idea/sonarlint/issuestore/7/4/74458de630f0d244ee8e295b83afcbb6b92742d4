@@ -1,0 +1,20 @@
+
+g	java:S101&"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÊœÉ‹ûÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(·òŒÛüÿÿÿÿ
+d
+java:S2095}"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(Âî¢·
+d
+java:S2095B"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(Âî¢·
+e
+java:S26747"JCheck the return value of the "read" call to see how many bytes were read.(€ÖŽ¨ÿÿÿÿÿ
+V	java:S125:"<This block of commented-out lines of code should be removed.(ôÆ¡‹þÿÿÿÿ
+Q	java:S125="<This block of commented-out lines of code should be removed.(ûÓï½
+Q	java:S125@"<This block of commented-out lines of code should be removed.(Ø¥´ë
+V	java:S125R"<This block of commented-out lines of code should be removed.(è¹þ”þÿÿÿÿ
+Q	java:S125h"<This block of commented-out lines of code should be removed.(í¿×Ç
+Q	java:S125r"<This block of commented-out lines of code should be removed.(èÑãž
+[
+java:S1858w"@"toJson" returns a string, there's no need to call "toString()".(·¢ªüÿÿÿÿ
+Q	java:S125{"<This block of commented-out lines of code should be removed.(Ø¥´ë
+4
+java:S1128"Remove this duplicated import.(¼º¡Ú

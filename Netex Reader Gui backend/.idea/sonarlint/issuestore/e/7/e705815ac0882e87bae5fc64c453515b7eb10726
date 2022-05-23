@@ -1,0 +1,14 @@
+
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(šÆö
+Q	java:S125,"<This block of commented-out lines of code should be removed.(½»ûå
+‡
+java:S1130B"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(ë…ÍÎúÿÿÿÿ
+A
+java:S1452B"&Remove usage of generic wildcard type.(ë…ÍÎúÿÿÿÿ
+P	java:S125W"<This block of commented-out lines of code should be removed.(ÒÔÜE
+G
+java:S1068",Remove this unused "userRepo" private field.(¨©¯‰ùÿÿÿÿ
+G
+java:S1068",Remove this unused "fileRepo" private field.(Î’–ùùÿÿÿÿ
+F
+java:S1068 "0Remove this unused "convertFiles" private field.(œ·Û©

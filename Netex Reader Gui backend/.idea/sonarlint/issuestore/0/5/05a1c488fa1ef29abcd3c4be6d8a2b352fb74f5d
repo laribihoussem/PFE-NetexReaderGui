@@ -1,0 +1,11 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(å¯×âüÿÿÿÿ
+i	java:S116"ORename this field "Name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É¬­Áøÿÿÿÿ
+p	java:S116"VRename this field "Description" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(º¼Â­ùÿÿÿÿ
+p	java:S116"VRename this field "PrivateCode" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(š“²´þÿÿÿÿ
+m	java:S116!"SRename this field "Centroid" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µâ”ßüÿÿÿÿ
+r	java:S116#"XRename this field "PostalAddress" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëÝÀ®ûÿÿÿÿ
+|	java:S116%"bRename this field "AccessibilityAssessment" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°Í£Íûÿÿÿÿ
+m	java:S116'"XRename this field "TransportMode" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²§ÂŸ
+o	java:S116+"URename this field "PublicCode" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãµ„çúÿÿÿÿ
+m	java:S116-"XRename this field "ParentQuayRef" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áìÿØ

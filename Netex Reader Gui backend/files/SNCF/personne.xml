@@ -1,0 +1,37 @@
+<root>
+  <users>
+    <firstName>Krish</firstName>
+    <lastName>Lee</lastName>
+    <emailAddress>krish.lee@learningcontainer.com</emailAddress>
+    <phoneNumber>123456</phoneNumber>
+    <userId>1</userId>
+  </users>
+  <users>
+    <firstName>racks</firstName>
+    <lastName>jacson</lastName>
+    <emailAddress>racks.jacson@learningcontainer.com</emailAddress>
+    <phoneNumber>123456</phoneNumber>
+    <userId>2</userId>
+  </users>
+  <users>
+    <firstName>denial</firstName>
+    <lastName>roast</lastName>
+    <emailAddress>denial.roast@learningcontainer.com</emailAddress>
+    <phoneNumber>33333333</phoneNumber>
+    <userId>3</userId>
+  </users>
+  <users>
+    <firstName>devid</firstName>
+    <lastName>neo</lastName>
+    <emailAddress>devid.neo@learningcontainer.com</emailAddress>
+    <phoneNumber>222222222</phoneNumber>
+    <userId>4</userId>
+  </users>
+  <users>
+    <firstName>jone</firstName>
+    <lastName>mac</lastName>
+    <emailAddress>jone.mac@learningcontainer.com</emailAddress>
+    <phoneNumber>111111111</phoneNumber>
+    <userId>5</userId>
+  </users>
+</root>

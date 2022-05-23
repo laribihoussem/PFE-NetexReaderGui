@@ -1,0 +1,7 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(å¯×âüÿÿÿÿ
+m	java:S116"XRename this field "ContactPerson" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Íïƒø
+e	java:S116"PRename this field "Email" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áï»‚
+j	java:S116"PRename this field "Phone" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹¹È§üÿÿÿÿ
+h	java:S116"NRename this field "Url" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›‘ãðùÿÿÿÿ
+n	java:S116"YRename this field "FurtherDetails" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âýÚû

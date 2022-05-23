@@ -1,0 +1,147 @@
+<h1 class="title">Users list</h1>
+<div class="container margened">
+   <div class="input-group rounded">
+      <input type="search" class="form-control rounded" (input)="search($event)" placeholder="Search" aria-label="Search" aria-describedby="search-addon" [(ngModel)]="searchText"  placeholder="Search..." />
+      <span class="input-group-text border-0" id="search-addon">
+        <i class="fas fa-search"></i>
+      </span>
+    </div>
+  <table class="table">
+    <thead>
+      <tr class="table-primary">
+        <th style="color: blue;">Firstname</th>
+        <th style="color: blue;">Lastname</th>
+        <th style="color: blue;">Email</th>
+        <th style="color: blue;">Number</th>
+        <th style="text-align: center; color: blue;">Roles</th>
+        <th style="color: blue;" class="centered">Actions</th> 
+      </tr>
+    </thead>
+    <tbody>    
+      <tr class="table-light"*ngFor="let user of users1 | paginate: { itemsPerPage: 5, currentPage: p, totalItems: total} ">
+        <td>{{ user.firstName }}</td>
+        <td>{{ user.lastName }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.phoneNumber }}</td>
+        <td style="text-align: center;">
+            <div style="display: inline-block; padding-left: 10px;" *ngFor="let role of user.roles"> 
+               <!-- <span class="badge badge-success rounded-pill d-inline">{{ role.roleName }}</span> -->
+               <span  [ngClass]=" { 'roleUser': role.roleName == 'ROLE_USER',
+
+               'roleAdmin' :role.roleName == 'ROLE_ADMIN'      }" class="role">{{ role.roleName }}</span>
+            </div>
+        </td>
+        <td>
+          <div class="centered">
+            <a class="update" data-toggle="modal" style="cursor: pointer; color: rgb(98, 205, 98);" data-target="#updateUserModal" (click)="onclickUpdate(user, user.id)"><i class="fa fa-pencil"></i></a>
+            <a class="delete" data-toggle="modal" style="cursor: pointer; color: rgb(216, 46, 46);" data-target="#deletUserModal" (click)="onclickUpdate(user, user.id)"><i class="fa fa-trash-o fa-fw"></i></a>
+            <a class="added" data-toggle="modal" style="cursor: pointer; color: rgb(49, 49, 239);" data-target="#addRoleToUserModal" (click)="onclickAddRole(user.email)"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <pagination-controls previousLabel="Prev"
+  nextLabel="Next"
+  [responsive]="true" (pageChange)="changePage($event)"></pagination-controls>
+</div>
+
+
+
+ <!-- Edit Modal -->
+<div class="modal fade" id="updateUserModal" tabindex="-1" role="dialog" aria-labelledby="userEditModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+     <div class="modal-content">
+        <div class="modal-header">
+           <h5 class="modal-title" id="updateUserModalLabel">Update user</h5>
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+           </button>
+        </div>
+        <div class="modal-body">
+           <form #updateForm="ngForm">
+              <div class="form-group">
+                 <label class="label1" for="firstName">firstName</label>
+                 <input #firstName type="text" ngModel="{{ actualUser?.firstName }}" name="firstName" class="form-control" id="firstName" aria-describedby="emailHelp" placeholder="firstName">
+              </div>
+              <div class="form-group">
+               <label class="label1" for="lastName">lastName</label>
+               <input #lastName type="text" ngModel="{{ actualUser?.lastName }}" name="lastName" class="form-control" id="lastName" aria-describedby="emailHelp" placeholder="lastName">
+            </div>
+            <input #id type="hidden" ngModel="{{ actualUser?.id }}" name="id" class="form-control" id="id" aria-describedby="emailHelp" placeholder="id">
+              <div class="form-group">
+                 <label class="label1" for="email">Email Address</label>
+                 <input #email type="email" ngModel="{{ actualUser?.email }}" name="email" class="form-control" id="email" placeholder="Email">
+              </div>
+              <div class="form-group">
+                 <label class="label1" for="phone">Phone number</label>
+                 <input #phoneNumber type="text" ngModel="{{ actualUser?.phoneNumber }}" name="phone" class="form-control" id="phone" name="phone" placeholder="Phone">
+              </div>
+              <div class="modal-footer">
+                 <button type="button" id="" data-dismiss="modal" class="btn btn-secondary">Close</button>
+                 <button  data-dismiss="modal" class="btn btn-primary" (click)="onUpdateUser(firstName.value, lastName.value, email.value, phoneNumber.value, id.value)" >Save changes</button>
+              </div>
+           </form>
+        </div>
+     </div>
+  </div>
+</div> 
+
+ <!-- delete Modal -->
+ <div class="modal fade" id="deletUserModal" tabindex="-1" role="dialog" aria-labelledby="userDeleteModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+     <div class="modal-content">
+        <div class="modal-header">
+           <h5 class="modal-title centered" id="DeleteModalLabel">Deleting user</h5>
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+           </button>
+        </div>
+        <div class="modal-body">
+           <form #deleteForm="ngForm">
+              <div style="padding: 20px;">
+                <p>
+                  are you sure you want to delete <span style="color: red; font-weight: bold;">{{actualUser?.firstName}}</span>!!
+                </p>
+              </div>
+              <div class="modal-footer">
+                 <button type="button" id="" data-dismiss="modal" class="btn btn-secondary">Cancel</button>
+                 <button  data-dismiss="modal" class="btn btn-danger" (click)="onDeleteUser(actualUser.id)" >Delete</button>
+              </div>
+           </form>
+        </div>
+     </div>
+  </div>
+</div> 
+
+
+<!-- add role to user Modal -->
+<div class="modal fade" id="addRoleToUserModal" tabindex="-1" role="dialog" aria-labelledby="userDeleteModalLabel" aria-hidden="true">
+   <div class="modal-dialog" role="document">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h5 class="modal-title centered" id="DeleteModalLabel">Add Role to user</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+         </div>
+         <div class="modal-body">
+            <form>
+               <div class="form-group" style="text-align:center;">
+                  <select #role >
+                     <option value="0"> select role:</option>
+                     <option value="ROLE_ADMIN">ROLE_ADMIN</option>
+                     <option value="ROLE_USER">ROLE_USER</option>
+                     </select>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" id="" data-dismiss="modal" class="btn btn-secondary">Cancel</button>
+                  <button  data-dismiss="modal" class="btn btn-danger" (click)="addRoleToUser(actualEmail,role.value)">Add</button>
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+ </div> 
+ 
+
