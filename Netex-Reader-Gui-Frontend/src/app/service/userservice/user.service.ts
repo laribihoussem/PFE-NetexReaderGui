@@ -29,6 +29,15 @@ export class UserService {
     return this.http.put<UserData> (`${this.apiServerUrl}/api/user/update`, user);
   }
 
+
+  public enable(userId: number): Observable<any> {
+    return this.http.put<any> (`${this.apiServerUrl}/api/user/enable/${userId}`, {});
+  }
+
+  public desable(userId: number): Observable<any> {
+    return this.http.put<any> (`${this.apiServerUrl}/api/user/desable/${userId}`, {});
+  }
+
   public deleteUser(userId: number): Observable<void> {
     return this.http.delete<void> (`${this.apiServerUrl}/api/user/delete/${userId}`);
   }

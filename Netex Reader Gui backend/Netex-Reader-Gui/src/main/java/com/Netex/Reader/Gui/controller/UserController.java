@@ -86,6 +86,18 @@ public class UserController {
         return ResponseEntity.ok().body(userService.getRoles());
     }
 
+
+    @PutMapping("/user/desable/{id}")
+    public ResponseEntity<Users> desableUser(@PathVariable("id") Long id){
+        Users user=userService.desableUser(id);
+        return ResponseEntity.status(HttpStatus.CREATED).body(user);
+    }
+    @PutMapping("/user/enable/{id}")
+    public ResponseEntity<Users> activateUser(@PathVariable("id") Long id){
+        Users user=userService.enableUser(id);
+        return ResponseEntity.status(HttpStatus.CREATED).body(user);
+    }
+
 }
 @Data
 class RoleToUserForm {

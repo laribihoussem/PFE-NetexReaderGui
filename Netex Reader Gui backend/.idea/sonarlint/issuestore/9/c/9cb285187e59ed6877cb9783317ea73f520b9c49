@@ -1,5 +1,7 @@
 
-k	java:S1170"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ž¤ØÇøÿÿÿÿ
-k	java:S1176"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Àý©‘ùÿÿÿÿ
+k	java:S1171"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ž¤ØÇøÿÿÿÿ
+k	java:S1177"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Àý©‘ùÿÿÿÿ
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¢”Èµÿÿÿÿÿ
-V	java:S125;"<This block of commented-out lines of code should be removed.(éÝ„øÿÿÿÿ
+V	java:S125<"<This block of commented-out lines of code should be removed.(éÝ„øÿÿÿÿ
+l
+java:S1128"ORemove this unused import 'org.springframework.security.core.userdetails.User'.(–Ä€8ÓÁ½œ0

@@ -8,6 +8,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import javax.persistence.*;
 import java.sql.Timestamp;
 import java.util.List;
+import java.util.Set;
 
 import static javax.persistence.FetchType.EAGER;
 
@@ -48,7 +49,7 @@ public class File {
     private ConvertedFile convertedFile;
 
     @ManyToMany(fetch = EAGER)
-    private List<Routes> routes;
+    private Set<Routes> routes;
 
     public File(String name, String type, byte[] data) {
         super();

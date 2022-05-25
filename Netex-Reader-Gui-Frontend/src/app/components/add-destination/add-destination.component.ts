@@ -10,8 +10,10 @@ import { DestinationService } from 'src/app/service/destinationService/destinati
 export class AddDestinationComponent implements OnInit {
 
   constructor(private destinationService : DestinationService) { }
+  destinations : any;
 
   ngOnInit(): void {
+    this.getDestination();
   }
 
   addNewDestination(destName: string) {
@@ -20,6 +22,18 @@ export class AddDestinationComponent implements OnInit {
       (response: any) => {
         console.log(response);
     },
+      (error: HttpErrorResponse ) => {
+        alert(error.message);
+      }
+    )
+  }
+
+  getDestination() {
+    this.destinationService.getDestinations().subscribe(
+      (response: any) => {
+         console.log(response)
+         this.destinations= response;
+      },
       (error: HttpErrorResponse ) => {
         alert(error.message);
       }

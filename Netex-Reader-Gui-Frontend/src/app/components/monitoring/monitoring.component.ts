@@ -15,13 +15,13 @@ export class MonitoringComponent implements OnInit {
   value : any;
   routes: any;
   route : any[];
-  files: any[];
+ 
   p: number = 1;
   filterTerm!: string;
 
   ngOnInit(): void {
     this.getRoutesInfo();  
-    this.getroutefileInfo()
+    
   }
 
   public pieChartOptions: ChartOptions = {
@@ -87,15 +87,6 @@ export class MonitoringComponent implements OnInit {
       }
     )
   }
-  getroutefileInfo() {
-    this.monitoringService.routesFileInfo().subscribe(
-      (response) => {
-        this.files= response;
-        console.log(this.files);
-        this.files=response.reverse();
-        
-      }
-    )
-  }
+  
 
 }

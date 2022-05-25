@@ -10,6 +10,8 @@ export class EndpointsComponent implements OnInit {
 
   constructor(private monitoringService: MonitoringService) { }
   endpoints : any[];
+  p: number = 1;
+  filterTerm!: string;
 
   ngOnInit(): void {
     this.getendpointsInfo();

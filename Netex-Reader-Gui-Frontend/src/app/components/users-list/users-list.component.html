@@ -1,4 +1,4 @@
-<h1 class="title">Users list</h1>
+<h1 class="title">Users</h1>
 <div class="container margened">
    <div class="input-group rounded">
       <input type="search" class="form-control rounded" (input)="search($event)" placeholder="Search" aria-label="Search" aria-describedby="search-addon" [(ngModel)]="searchText"  placeholder="Search..." />
@@ -12,7 +12,8 @@
         <th style="color: blue;">Firstname</th>
         <th style="color: blue;">Lastname</th>
         <th style="color: blue;">Email</th>
-        <th style="color: blue;">Number</th>
+        <th style="color: blue;">Phone Number</th>
+        <th style="color: blue;">IsEnabled</th>
         <th style="text-align: center; color: blue;">Roles</th>
         <th style="color: blue;" class="centered">Actions</th> 
       </tr>
@@ -23,6 +24,10 @@
         <td>{{ user.lastName }}</td>
         <td>{{ user.email }}</td>
         <td>{{ user.phoneNumber }}</td>
+        <td>
+           <a style="cursor: pointer;" (click)="updateDesabel(user.id)" *ngIf="user.isEnabled"><i style="color: green; font-size: x-large;" class="fa-solid fa-person-circle-check"></i></a>
+           <a style="cursor: pointer;" (click)="updateEnabel(user.id)" *ngIf="!user.isEnabled"><i style="color: orangered; font-size: x-large;" class="fa-solid fa-person-circle-xmark"></i></a>
+         </td>
         <td style="text-align: center;">
             <div style="display: inline-block; padding-left: 10px;" *ngFor="let role of user.roles"> 
                <!-- <span class="badge badge-success rounded-pill d-inline">{{ role.roleName }}</span> -->
@@ -33,8 +38,8 @@
         </td>
         <td>
           <div class="centered">
-            <a class="update" data-toggle="modal" style="cursor: pointer; color: rgb(98, 205, 98);" data-target="#updateUserModal" (click)="onclickUpdate(user, user.id)"><i class="fa fa-pencil"></i></a>
-            <a class="delete" data-toggle="modal" style="cursor: pointer; color: rgb(216, 46, 46);" data-target="#deletUserModal" (click)="onclickUpdate(user, user.id)"><i class="fa fa-trash-o fa-fw"></i></a>
+            <a class="update" data-toggle="modal" style="cursor: pointer; color: rgb(98, 205, 98);" data-target="#updateUserModal" (click)="onclickUpdate(user, user.id)"><i class="fa-solid fa-user-pen"></i></a>
+            <a class="delete" data-toggle="modal" style="cursor: pointer; color: rgb(216, 46, 46);" data-target="#deletUserModal" (click)="onclickUpdate(user, user.id)"><i class="fa-solid fa-user-xmark"></i></a>
             <a class="added" data-toggle="modal" style="cursor: pointer; color: rgb(49, 49, 239);" data-target="#addRoleToUserModal" (click)="onclickAddRole(user.email)"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
           </div>
         </td>
@@ -88,8 +93,8 @@
 </div> 
 
  <!-- delete Modal -->
- <div class="modal fade" id="deletUserModal" tabindex="-1" role="dialog" aria-labelledby="userDeleteModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+ <div  class="modal fade" id="deletUserModal" tabindex="-1" role="dialog" aria-labelledby="userDeleteModalLabel" aria-hidden="true">
+  <div  class="modal-dialog" role="document">
      <div class="modal-content">
         <div class="modal-header">
            <h5 class="modal-title centered" id="DeleteModalLabel">Deleting user</h5>
@@ -100,8 +105,9 @@
         <div class="modal-body">
            <form #deleteForm="ngForm">
               <div style="padding: 20px;">
-                <p>
-                  are you sure you want to delete <span style="color: red; font-weight: bold;">{{actualUser?.firstName}}</span>!!
+               <h3 style=" font-size:xx-large;color: red; text-align: center;"><i style="font-size:xx-large;" class="fa-solid fa-circle-exclamation"></i></h3>
+                <p style="text-align: center;">
+                  Are you sure you want to delete <span style="color: red; font-weight: bold;">{{actualUser?.firstName}}</span>!!
                 </p>
               </div>
               <div class="modal-footer">
@@ -125,20 +131,24 @@
             <span aria-hidden="true">&times;</span>
             </button>
          </div>
-         <div class="modal-body">
-            <form>
-               <div class="form-group" style="text-align:center;">
-                  <select #role >
-                     <option value="0"> select role:</option>
-                     <option value="ROLE_ADMIN">ROLE_ADMIN</option>
-                     <option value="ROLE_USER">ROLE_USER</option>
-                     </select>
+         <div  class="modal-body" style="text-align: center;">
+               <button style="margin: 70px 0; width: 150px; text-align: left;" class="btn btn-outline-primary dropdown-toggle"  data-toggle="dropdown">Select Role</button>
+                <div class="dropdown-menu">
+                  <div  class="dropdown-item">
+                      <div class="form-check">    
+                            <input type="radio" class="form-check-input" name="optradio2" value="ROLE_ADMIN" [(ngModel)]="radioData">ROLE_ADMIN
+                      </div>
+                  </div>
+                  <div  class="dropdown-item">
+                     <div class="form-check">    
+                           <input type="radio" class="form-check-input" name="optradio2" value="ROLE_USER" [(ngModel)]="radioData">ROLE_USER
+                     </div>
+                 </div>
                </div>
                <div class="modal-footer">
                   <button type="button" id="" data-dismiss="modal" class="btn btn-secondary">Cancel</button>
-                  <button  data-dismiss="modal" class="btn btn-danger" (click)="addRoleToUser(actualEmail,role.value)">Add</button>
+                  <button  data-dismiss="modal" class="btn btn-success" (click)="addRoleToUser(actualEmail)">Add</button>
                </div>
-            </form>
          </div>
       </div>
    </div>

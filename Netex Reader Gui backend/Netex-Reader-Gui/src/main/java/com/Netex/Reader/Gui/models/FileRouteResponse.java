@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.List;
+import java.util.Set;
 
 @Data
 @NoArgsConstructor
@@ -18,7 +19,7 @@ public class FileRouteResponse {
 
     private String outputFormat;
 
-    private List<Routes> routes;
+    private Set<Routes> routes;
 
 
     public void convert(File file) {

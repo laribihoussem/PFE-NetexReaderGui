@@ -1,14 +1,29 @@
 <div class="container">
   <div><h2 class="title" style="text-align: center;">Add a new destination</h2></div>
-    <div class="row" style="margin-top: 100px;">
+    <div class="row" style="margin-top: 60px;">
         <div class="input-group mb-3" style="margin: auto;
         width: 50%;
-        border: 3px solid gray;
+        border: 3px solid blue;
         padding: 10px;">
             <input #name type="text" class="form-control" placeholder="Enter destination name" aria-label="Enter destination name" aria-describedby="basic-addon2">
             <div class="input-group-append">
-              <button class="btn btn-outline-secondary" (click)="addNewDestination(name.value)" type="button">Add</button>
+              <button class="btn btn-primary" (click)="addNewDestination(name.value)" type="button">Add</button>
             </div>
           </div>
     </div>
+</div>
+
+<div class="container" style="margin-top:50px ;">
+  <div class="row">
+    <div class="col-md-4">
+      <h3 class="text-primary">Existing Destinations Are:</h3>
+    </div>
+    <div class="col-md-6" style="padding-top: 20px;">
+        <Table style="text-align: center;">
+          <tr *ngFor="let dest of destinations">
+            <td> <h3>{{dest.name}}</h3></td>
+          </tr>
+        </Table>
+    </div>
+  </div>
 </div>

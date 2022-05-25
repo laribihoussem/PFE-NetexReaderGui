@@ -1,10 +1,10 @@
 .home{
     color: #65737E;
      font-family: 'Rouge Script', cursive;
-      font-size: 70px;
+      font-size: 40px;
        font-weight: normal;
-       line-height: 150px; margin: 0 0 50px;
-        text-align: center; text-shadow: 1px 1px 2px #4798ac;
+        margin: 0;
+        text-align: center; 
         position: absolute;
         top: 50%; left: 50%; /* à 50%/50% du parent référent */
         transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */

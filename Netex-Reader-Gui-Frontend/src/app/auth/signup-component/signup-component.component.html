@@ -5,15 +5,15 @@
 				<div class="form-detail">
 					<h2>Register Account Form</h2>
 					<div class="form-row">
-						<label for="irst-name"> first name</label>
+						<label for="irst-name"> First Name</label>
 						<input [class.is-invalid]="getElements.firstName.invalid && getElements.firstName.touched"
-						#firstName type="text" name="first-name" id="first-name" class="input-text" placeholder="Your Name" formControlName="firstName" required>
+						#firstName type="text" name="first-name" id="first-name" class="input-text" placeholder="Your first Name" formControlName="firstName" required>
 						<div *ngIf="(getElements.firstName.touched && getElements.firstName.invalid)">
 							<small *ngIf="getElements.phoneNumber.errors?.required" class="text-danger">required</small>
 					 	</div>
 					</div>
 					<div class="form-row">
-						<label for="full-name">last name</label>
+						<label for="full-name">Last Name</label>
 						<input [class.is-invalid]="getElements.lastName.invalid && getElements.lastName.touched"
 						 #lastName type="text" name="full-name" id="full-name" class="input-text" placeholder="Your last Name" formControlName="lastName" required>
 						<div *ngIf="(getElements.lastName.touched && getElements.lastName.invalid)">
@@ -21,9 +21,9 @@
 					 	</div>
 					</div>
 					<div class="form-row">
-						<label for="your-email">Your Email</label>
+						<label for="your-email">Email Adresse</label>
 						<input [class.is-invalid]="getElements.email.invalid && getElements.email.touched"
-						 #email type="email" name="your-email" id="your-email" class="input-text" placeholder="Your Email" formControlName="email" required>
+						 #email type="email" name="your-email" id="your-email" class="input-text" placeholder="Your Email adresse" formControlName="email" required>
 						 <div *ngIf="(getElements.email.invalid && getElements.email.touched) || getElements.email.dirty">
 							<small *ngIf="getElements.email.errors?.required" class="text-danger">email is required</small>
 							<!--question mark(?) is a safe navigation operator-->
@@ -50,7 +50,7 @@
 					 	</div>
 					</div>
 					<div class="form-row">
-						<label for="number">phone Number</label>
+						<label for="number">Phone Number</label>
 						<input [class.is-invalid] = "getElements.phoneNumber.invalid && getElements.phoneNumber.touched"
 						#phoneNumber type="text" name="number" id="number" class="input-text" placeholder="Your phone Number" formControlName="phoneNumber" required>
 						<div *ngIf="(getElements.phoneNumber.touched && getElements.phoneNumber.invalid)">

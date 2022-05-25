@@ -18,6 +18,7 @@ export class UsersListComponent implements OnInit {
   public actualUser: any;
   public actualEmail: string;
   public updatedId: number=0;
+  public radioData : any;
   users1:any;
 
   searchText:String=''
@@ -34,19 +35,8 @@ export class UsersListComponent implements OnInit {
   constructor( private userService : UserService) { }
 
   ngOnInit(): void {
-    this.userService.getAllUsers(0,5,'').subscribe(
-
-      res=>{
-        console.log(res);
-        this.users1=res.content;
-        this.total=res.totalElements;
-      },
-      err=>{
-        console.log(err);
-      }
-
-    )
-    //this.getUsers();
+    
+    this.getUsers();
   }
 
   onclickUpdate(user: UserData, id: number) {
@@ -58,11 +48,12 @@ export class UsersListComponent implements OnInit {
     this.actualEmail= email;
   }
 
-  public addRoleToUser(email:string, roleName: string) {
-    this.userService.addRoleToUser(email, roleName).subscribe(
+  public addRoleToUser(email:string) {
+
+    this.userService.addRoleToUser(email, this.radioData).subscribe(
       Response=>{
         console.log("seccessfuly addedd role");
-        //this.getUsers();
+        this.getUsers();
       }
     )
   }
@@ -107,20 +98,46 @@ export class UsersListComponent implements OnInit {
         })
     }
   }
+  updateEnabel(id: number) {
+    console.log(id);
+    this.userService.enable(id).subscribe(
+      (response: any) => {
+        console.log(response);
+        this.getUsers();
+      },
+      (error: HttpErrorResponse) => {
+        alert(error.message);
+      }
+    );
+    
+  }
+  updateDesabel(id: number) {
+    console.log(id);
+    this.userService.desable(id).subscribe(
+      (response: any) => {
+        console.log(response);
+        this.getUsers();
+      },
+      (error: HttpErrorResponse) => {
+        alert(error.message);
+      }
+    );
+    
+  }
 
-  // public getUsers(): void {
-  //   this.userService.getAll().subscribe(
-  //     (response : User[] ) => {
-  //       this.users = response;
-  //       console.log(response);
-  //       console.log("users are",this.users);
-  //       console.log(this.users)
-  //     },
-  //     (error: HttpErrorResponse ) => {
-  //       alert(error.message);
-  //     }
-  //   )
-  // }
+   public getUsers(): void {
+    this.userService.getAllUsers(0,5,'').subscribe(
+
+      res=>{
+        console.log(res);
+        this.users1=res.content;
+        this.total=res.totalElements;
+      },
+      err=>{
+        console.log(err);
+      }
+    )    
+   }
 
   public onUpdateUser(firstName: string, lastName: string, email: string, phoneNumber:string, id:string): void {
     let phoneNumber1=Number(phoneNumber);
@@ -132,7 +149,7 @@ export class UsersListComponent implements OnInit {
     this.userService.updateUser(user).subscribe(
       (response: UserData) => {
         console.log(response);
-        //this.getUsers();
+        this.getUsers();
       },
       (error: HttpErrorResponse) => {
         alert(error.message);
@@ -144,7 +161,7 @@ export class UsersListComponent implements OnInit {
     this.userService.deleteUser(userId).subscribe(
       (response: void) => {
         console.log(response);
-        //this.getUsers();
+        this.getUsers();
       },
       (error: HttpErrorResponse) => {
         alert(error.message);

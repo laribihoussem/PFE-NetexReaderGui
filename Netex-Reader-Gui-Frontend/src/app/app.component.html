@@ -20,13 +20,11 @@
             <li class="list-group-item"><a (click)="toggleSidebar()" routerLink="/personalHistory"><span><i class="fa-solid fa-clock-rotate-left"></i></span> Personal History</a></li>
             <li *ngIf="isAdmin" class="list-group-item"><a (click)="toggleSidebar()" routerLink="/addDestination"><i class="fa-solid fa-map-location-dot"></i><span> Destination</span></a></li>
             <li *ngIf="isAdmin" class="list-group-item"><a (click)="toggleSidebar()" routerLink="/monitoring"><i class="fa-brands fa-watchman-monitoring"></i><span> Routes Monitoring</span></a></li>
-
-            <!-- <li class="list-group-item"><button class="button-24" role="button" (click)="toggleSidebar()">close<i class="fa-solid fa-xmark"></i></button></li> -->
             
         </ul>
-        <div *ngIf="userIsAuthenticated" style="text-align: center; margin-top: 25px;">
+        <!-- <div *ngIf="userIsAuthenticated" style="text-align: center; margin-top: 25px;">
             <button class="btn btn-success" (click)=" logout()"><span><i class="fa-solid fa-arrow-right-from-bracket"></i></span> Logout</button>
-        </div>
+        </div> -->
     </ng-sidebar>
     <div ng-sidebar-content>
         <nav class="navbar navbar-expand-lg  bg-light navbar-light" style="background-color: #f4f4f4;">
@@ -60,13 +58,13 @@
                     <a class="nav-link mx-2" href="https://tn.talan.com/a-propos/nous-contacter/"><i class="fas fa-heart pe-2"></i>Contact</a>
                   </li> -->
                   <li *ngIf="!userIsAuthenticated" class="nav-item ms-3">
-                    <a class="btn btn-black btn-rounded hover"  routerLink="/register">Sign up</a>
+                    <a class="btn btn-outline-primary"  routerLink="/register">Sign up</a>
                   </li>
                   <li *ngIf="!userIsAuthenticated" class="nav-item ms-3">
-                    <a class="btn btn-black btn-rounded hover" routerLink="/login">Sign in</a>
+                    <a class="btn btn-outline-success" routerLink="/login">Sign in</a>
                   </li>
                   <li *ngIf="userIsAuthenticated" class="nav-item ms-3">
-                    <a class="btn btn-black btn-rounded hover1" (click)="logout()"><i class="fa-solid fa-door-open"></i> Sign out</a>
+                    <a class="btn btn-outline-secondary" (click)="logout()"><i style="color: red;" class="fa-solid fa-door-open"></i> Sign out</a>
                   </li>
                 </ul>
               </div>

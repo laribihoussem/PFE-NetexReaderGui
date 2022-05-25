@@ -7,7 +7,6 @@ import com.Netex.Reader.Gui.repository.UserRepo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -16,8 +15,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import org.springframework.data.domain.Pageable;
-import java.util.ArrayList;
-import java.util.Collection;
+
 import java.util.List;
 
 @Service
@@ -39,16 +37,12 @@ public class UserServiceImp implements UserService, UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
         Users user = userRepo.findByEmail(email);
-        if(user == null) {
+        if(user == null|| !user.getIsEnabled()) {
             log.error("User not found in the database");
             throw new UsernameNotFoundException("User not found in the data base");
         } else {
             log.info("User found in the database: {}", email);
-            Collection<SimpleGrantedAuthority> authorities = new ArrayList<>();
-            user.getRoles().forEach(role -> {
-                authorities.add(new SimpleGrantedAuthority(role.getRoleName()));
-            });
-            return new org.springframework.security.core.userdetails.User(user.getEmail(), user.getPassword(), authorities);
+            return user;
         }
     }
 
@@ -64,7 +58,12 @@ public class UserServiceImp implements UserService, UserDetailsService {
     }
     @Override
     public Users updateUser(Users user){
-        return userRepo.save(user);
+        Users us1 = userRepo.findById(user.getId());
+        us1.setEmail(user.getEmail());
+        us1.setFirstName(user.getFirstName());
+        us1.setLastName(user.getLastName());
+        us1.setPhoneNumber(user.getPhoneNumber());
+        return userRepo.save(us1);
     }
 
     @Override
@@ -101,6 +100,21 @@ public class UserServiceImp implements UserService, UserDetailsService {
     @Override
     public List<Users> getUsers() {
         return userRepo.findAll();
+    }
+
+
+    @Override
+    public Users enableUser(Long id) {
+        Users user=userRepo.findById(id).get();
+        user.setIsEnabled(true);
+        return userRepo.save(user);
+    }
+
+    @Override
+    public Users desableUser(Long id) {
+        Users user=userRepo.findById(id).get();
+        user.setIsEnabled(false);
+        return userRepo.save(user);
     }
 
 

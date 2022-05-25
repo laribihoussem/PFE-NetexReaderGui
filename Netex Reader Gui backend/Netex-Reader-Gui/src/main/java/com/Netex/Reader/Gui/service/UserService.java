@@ -19,4 +19,8 @@ public interface UserService {
     void deleteUser(Long id);
     public Page<Users> findByName(String name, Pageable pageable);
 
+
+    Users enableUser(Long id);
+
+    Users desableUser(Long id);
 }

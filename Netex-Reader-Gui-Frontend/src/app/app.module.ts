@@ -33,6 +33,7 @@ import { AddDestinationComponent } from './components/add-destination/add-destin
 import { MonitoringComponent } from './components/monitoring/monitoring.component';
 import { EndpointsComponent } from './components/monitoring/endpoints/endpoints.component';
 import { ComponentComponent } from './components/monitoring/component/component.component';
+import { FileByRouteComponent } from './components/monitoring/file-by-route/file-by-route.component';
 
 
 
@@ -55,6 +56,7 @@ import { ComponentComponent } from './components/monitoring/component/component.
     MonitoringComponent,
     EndpointsComponent,
     ComponentComponent,
+    FileByRouteComponent,
    
     
 

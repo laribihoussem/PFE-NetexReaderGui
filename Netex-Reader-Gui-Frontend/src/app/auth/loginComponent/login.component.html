@@ -1,7 +1,7 @@
 <div class="content">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-5">
           <img src="../../../assets/images/undraw_remotely_2j6y.svg" alt="Image" class="img-fluid">
         </div>
         <div class="col-md-6 contents">
@@ -11,7 +11,7 @@
               <h3>Sign In</h3>
             </div>
             <form [formGroup]="loginForm">
-              <div class="form-group first">
+              <div class="form-group first" style="margin-bottom: 20px;">
                   <input [class.is-invalid]="getEmail.invalid && getEmail.touched"
                    #email placeholder="Username or Email" type="text" class="form-control" id="username" formControlName="email"> 
                    <div *ngIf="(getEmail.invalid && getEmail.touched) || getEmail.dirty">
@@ -28,12 +28,6 @@
                   </div>
               </div>
               
-              <div class="d-flex mb-5 align-items-center">
-                <label class="control control--checkbox mb-0"><span class="caption">Remember me</span>
-                  <input type="checkbox" checked="checked"/>
-                  <div class="control__indicator"></div>
-                </label>
-              </div>
               <div  class="mb-4" style="text-align: right;">
                 <a routerLink="/register">still don't have acount ?</a>
               </div>

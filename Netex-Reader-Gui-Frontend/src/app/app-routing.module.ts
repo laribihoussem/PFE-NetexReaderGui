@@ -15,6 +15,7 @@ import { MonitoringComponent } from './components/monitoring/monitoring.componen
 import { HistoryComponent } from './components/history/history.component';
 import { EndpointsComponent } from './components/monitoring/endpoints/endpoints.component';
 import { ComponentComponent } from './components/monitoring/component/component.component';
+import { FileByRouteComponent } from './components/monitoring/file-by-route/file-by-route.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -48,6 +49,10 @@ const routes: Routes = [
     expectedRole: 'ROLE_ADMIN'
   }  },
   { path: 'monitoring/components', component: ComponentComponent, canActivate: [RoleGuard], 
+  data: { 
+    expectedRole: 'ROLE_ADMIN'
+  }  },
+  { path: 'monitoring/files', component: FileByRouteComponent, canActivate: [RoleGuard], 
   data: { 
     expectedRole: 'ROLE_ADMIN'
   }  },

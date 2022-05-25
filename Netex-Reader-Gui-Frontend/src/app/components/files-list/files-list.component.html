@@ -1,5 +1,5 @@
 <div class="container">
-  <h2 class="title">uploaded files list</h2>
+  <h2 class="title">Uploaded Files</h2>
 </div>
 
 <div class="container margened">
@@ -12,20 +12,20 @@
   <table class="table">
     <thead >
       <tr class="table-primary">
-        <th>#</th>
-        <th>File Name</th>
-        <th>File Type</th>
-        <th>Upload date</th>
-        <th>Details</th>
+        <th style="color:blue;">#</th>
+        <th style="color:blue;">File Name</th>
+        <th style="color:blue;">File Type</th>
+        <th style="color:blue;">Upload date</th>
+        <th style="color:blue;">Download</th>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let file of Files  | paginate: { itemsPerPage: 10, currentPage: p} | filter:filterTerm">
         <td ><span><i class="fa-solid fa-file-lines" style="color: burlywood; font-size: xx-large;"></i></span></td>
-        <td class="font"> {{ file.name }} </td>
+        <td  class="font"> {{ file.name }} </td>
         <td class="font"> {{ file.type }} </td>
         <td class="font">{{ file.date_creation }}</td>
-        <td class="centered"> <i  (click)="download(file.id)" class="fa-solid fa-file-arrow-down" style="cursor: pointer; color: lightblue; font-size: x-large;"></i></td>
+        <td> <i  (click)="download(file.id)" class="fa-solid fa-file-arrow-down centered" style="cursor: pointer; color: lightblue; font-size: x-large;"></i></td>
       </tr>
     </tbody>
   </table> 

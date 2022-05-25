@@ -1,3 +1,6 @@
 
 o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(†ö×
-m	java:S116%"XRename this field "date_creation" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( š£ß
+m	java:S116&"XRename this field "date_creation" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( š£ß
+M
+java:S1128
+"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8±¹öŒ0
