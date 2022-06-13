@@ -42,7 +42,7 @@ export class MonitoringComponent implements OnInit {
   };
   public pieChartLabels: Label[] = [['Completed Exchanges'], ['Failed Exchanges']];
   public pieChartData: SingleDataSet = [];
-  public pieChartType: ChartType = 'pie';
+  public pieChartType: ChartType = 'doughnut';
   public pieChartLegend = true;
   public pieChartPlugins = [];
   public pieChartColors = [
@@ -52,7 +52,7 @@ export class MonitoringComponent implements OnInit {
   ]
   public pieChartLabels1: Label[] = [['Completed Exchanges'], ['Failed Exchanges']];
   public pieChartData1: SingleDataSet = [];
-  public pieChartType1: ChartType = 'pie';
+  public pieChartType1: ChartType = 'doughnut';
   public pieChartLegend1 = true;
   public pieChartPlugins1 = [];
   constructor(private monitoringService: MonitoringService) {

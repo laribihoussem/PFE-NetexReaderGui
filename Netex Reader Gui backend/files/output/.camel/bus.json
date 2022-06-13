@@ -1,0 +1,1357 @@
+{"PublicationDelivery": {
+    "PublicationTimestamp": "2016-05-23T12:00:00.0Z",
+    "dataObjects": {"CompositeFrame": {
+        "FrameDefaults": {
+            "DefaultLocale": {"DefaultLanguage": "no"},
+            "DefaultCodespaceRef": {"ref": "uni"},
+            "DefaultLocationSystem": "WGS84"
+        },
+        "frames": {
+            "SiteFrame": {
+                "stopPlaces": {"StopPlace": [
+                    {
+                        "StopPlaceType": "busStation",
+                        "responsibilitySetRef": "RUT:ResponsibilitySet:Planning",
+                        "quays": {"Quay": {
+                            "Centroid": {"Location": {
+                                "srsName": "WGS84",
+                                "Latitude": 59.912494,
+                                "Longitude": 10.800792
+                            }},
+                            "id": "NSR:Quay:helsfyr_t-QUAYID",
+                            "version": 1
+                        }},
+                        "TransportMode": "bus",
+                        "id": "NSR:StopPlace:helsfyr_t",
+                        "version": 1,
+                        "Name": "Helsfyr T"
+                    },
+                    {
+                        "StopPlaceType": "onstreetBus",
+                        "responsibilitySetRef": "RUT:ResponsibilitySet:Planning",
+                        "quays": {"Quay": {
+                            "Centroid": {"Location": {
+                                "srsName": "WGS84",
+                                "Latitude": 59.909351,
+                                "Longitude": 10.814013
+                            }},
+                            "id": "NSR:Quay:brynseng_t-QUAYID",
+                            "version": 1
+                        }},
+                        "TransportMode": "bus",
+                        "id": "NSR:StopPlace:brynseng_t",
+                        "version": 1,
+                        "Name": "Brynseng T"
+                    },
+                    {
+                        "StopPlaceType": "onstreetBus",
+                        "responsibilitySetRef": "RUT:ResponsibilitySet:Planning",
+                        "quays": {"Quay": {
+                            "Centroid": {"Location": {
+                                "srsName": "WGS84",
+                                "Latitude": 59.907023,
+                                "Longitude": 10.819156
+                            }},
+                            "id": "NSR:Quay:hoyenhall_t-QUAYID",
+                            "version": 1
+                        }},
+                        "TransportMode": "bus",
+                        "id": "NSR:StopPlace:hoyenhall_t",
+                        "version": 1,
+                        "Name": "H�yenhall T"
+                    },
+                    {
+                        "StopPlaceType": "onstreetBus",
+                        "responsibilitySetRef": "RUT:ResponsibilitySet:Planning",
+                        "quays": {"Quay": {
+                            "Centroid": {"Location": {
+                                "srsName": "WGS84",
+                                "Latitude": 59.898316,
+                                "Longitude": 10.813655
+                            }},
+                            "id": "NSR:Quay:manglerud_t-QUAYID",
+                            "version": 1
+                        }},
+                        "TransportMode": "bus",
+                        "id": "NSR:StopPlace:manglerud_t",
+                        "version": 1,
+                        "Name": "Manglerud T"
+                    },
+                    {
+                        "StopPlaceType": "onstreetBus",
+                        "responsibilitySetRef": "RUT:ResponsibilitySet:Planning",
+                        "quays": {"Quay": {
+                            "Centroid": {"Location": {
+                                "srsName": "WGS84",
+                                "Latitude": 59.895407,
+                                "Longitude": 10.805572
+                            }},
+                            "id": "NSR:Quay:ryen_t-QUAYID",
+                            "version": 1
+                        }},
+                        "TransportMode": "bus",
+                        "id": "NSR:StopPlace:ryen_t",
+                        "version": 1,
+                        "Name": "Ryen T"
+                    },
+                    {
+                        "StopPlaceType": "onstreetBus",
+                        "responsibilitySetRef": "RUT:ResponsibilitySet:Planning",
+                        "quays": {"Quay": {
+                            "Centroid": {"Location": {
+                                "srsName": "WGS84",
+                                "Latitude": 59.882075,
+                                "Longitude": 10.782948
+                            }},
+                            "id": "NSR:Quay:holtet-QUAYID",
+                            "version": 1
+                        }},
+                        "TransportMode": "bus",
+                        "id": "NSR:StopPlace:holtet",
+                        "version": 1,
+                        "Name": "Holtet stasjon"
+                    }
+                ]},
+                "id": "RUT:SiteFrame:1",
+                "topographicPlaces": {"TopographicPlace": {
+                    "CountryRef": {
+                        "ref": "no",
+                        "content": "Norge"
+                    },
+                    "IsoCode": "NO-01",
+                    "gml:Polygon": {
+                        "gml:interior": {"gml:LinearRing": {"gml:posList": "68.70923645412397 15.785790740295104 68.70923645412397 15.785790740295104 68.70869280442156 15.78766771754421 68.70869280442156 15.79755761753423"}},
+                        "gml:id": "GEN-PolygonType",
+                        "gml:exterior": {"gml:LinearRing": {"gml:posList": "70.16841666827621 17.8052486576626 70.21574446559536 17.901877649791594 70.21690598488841 17.904274043451604 70.34045040485829 18.163047310031583"}}
+                    },
+                    "TopographicPlaceType": "county",
+                    "Descriptor": {"Name": {
+                        "lang": "no",
+                        "content": "Oslo"
+                    }},
+                    "id": "RUT:TopographicPlace:1",
+                    "ValidBetween": {"FromDate": "1984-01-01T00:00:00"},
+                    "version": 1
+                }},
+                "version": 1
+            },
+            "ServiceFrame": {
+                "routes": {"Route": {
+                    "DirectionType": "outbound",
+                    "id": "RUT:Route:109",
+                    "LineRef": {
+                        "ref": "RUT:Line:109",
+                        "version": 1
+                    },
+                    "version": 1,
+                    "pointsInSequence": {"PointOnRoute": [
+                        {
+                            "RoutePointRef": {
+                                "ref": "RUT:RoutePoint:helsfyr",
+                                "version": 1
+                            },
+                            "id": "RUT:PointOnRoute:109-start",
+                            "version": 1,
+                            "order": 1
+                        },
+                        {
+                            "RoutePointRef": {
+                                "ref": "RUT:RoutePoint:holtet",
+                                "version": 1
+                            },
+                            "id": "RUT:PointOnRoute:109-end",
+                            "version": 1,
+                            "order": 2
+                        }
+                    ]},
+                    "Name": "Morgenbuss Helsfyr - Holtet"
+                }},
+                "serviceLinks": {"ServiceLink": [
+                    {
+                        "projections": {"LinkSequenceProjection": {
+                            "gml:LineString": {
+                                "gml:pos": [
+                                    "59.911925 10.807198",
+                                    "59.910395 10.813012"
+                                ],
+                                "srsName": "WGS84",
+                                "gml:id": "helsfyr_to_brynseng"
+                            },
+                            "id": "RUT:LinkSequenceProjection:109-helsfyr_to_brynseng",
+                            "version": 1
+                        }},
+                        "FromPointRef": {
+                            "ref": "RUT:ScheduledStopPoint:helfyr_t",
+                            "version": 1
+                        },
+                        "ToPointRef": {
+                            "ref": "RUT:ScheduledStopPoint:brynseng_t",
+                            "version": 1
+                        },
+                        "id": "RUT:ServiceLink:helsfyr_to_brynseng",
+                        "version": 1,
+                        "Distance": 150
+                    },
+                    {
+                        "projections": {"LinkSequenceProjection": {
+                            "gml:LineString": {
+                                "gml:pos": [
+                                    "59.908251 10.816363",
+                                    "59.907908 10.816819"
+                                ],
+                                "srsName": "WGS84",
+                                "gml:id": "brynseng_to_hoyenhall"
+                            },
+                            "id": "RUT:LinkSequenceProjection:109-brynseng_to_hoyenhall",
+                            "version": 1
+                        }},
+                        "FromPointRef": {
+                            "ref": "RUT:ScheduledStopPoint:brynseng_t",
+                            "version": 1
+                        },
+                        "ToPointRef": {
+                            "ref": "RUT:ScheduledStopPoint:hoyenhall_t",
+                            "version": 1
+                        },
+                        "id": "RUT:ServiceLink:brynseng_to_hoyenhall",
+                        "version": 1,
+                        "Distance": 275
+                    },
+                    {
+                        "projections": {"LinkSequenceProjection": {
+                            "gml:LineString": {
+                                "gml:pos": [
+                                    "59.904645 10.820626",
+                                    "59.899678 10.815965"
+                                ],
+                                "srsName": "WGS84",
+                                "gml:id": "hoyenhall_to_manglerud"
+                            },
+                            "id": "RUT:LinkSequenceProjection:109-hoyenhall_to_manglerud",
+                            "version": 1
+                        }},
+                        "FromPointRef": {
+                            "ref": "RUT:ScheduledStopPoint:hoyenhall_t",
+                            "version": 1
+                        },
+                        "ToPointRef": {
+                            "ref": "RUT:ScheduledStopPoint:manglerud_t",
+                            "version": 1
+                        },
+                        "id": "RUT:ServiceLink:hoyenhall_to_manglerud",
+                        "version": 1,
+                        "Distance": 100
+                    },
+                    {
+                        "projections": {"LinkSequenceProjection": {
+                            "gml:LineString": {
+                                "gml:pos": [
+                                    "59.896709 10.810350",
+                                    "59.895940 10.807332"
+                                ],
+                                "srsName": "WGS84",
+                                "gml:id": "manglerud_to_ryen"
+                            },
+                            "id": "RUT:LinkSequenceProjection:109-manglerud_to_ryen",
+                            "version": 1
+                        }},
+                        "FromPointRef": {
+                            "ref": "RUT:ScheduledStopPoint:manglerud_t",
+                            "version": 1
+                        },
+                        "ToPointRef": {
+                            "ref": "RUT:ScheduledStopPoint:ryen_t",
+                            "version": 1
+                        },
+                        "id": "RUT:ServiceLink:manglerud_to_ryen",
+                        "version": 1,
+                        "Distance": 150
+                    },
+                    {
+                        "projections": {"LinkSequenceProjection": {
+                            "gml:LineString": {
+                                "gml:pos": [
+                                    "59.894780 10.804309",
+                                    "59.892531 10.804000",
+                                    "59.888996 10.805961",
+                                    "59.887608 10.806368",
+                                    "59.886410 10.800586",
+                                    "59.885832 10.792943",
+                                    "59.885392 10.788938",
+                                    "59.885630 10.784435",
+                                    "59.883864 10.783759",
+                                    "59.881872 10.783770"
+                                ],
+                                "srsName": "WGS84",
+                                "gml:id": "ryen_to_holtet"
+                            },
+                            "id": "RUT:LinkSequenceProjection:109-ryen_to_holtet",
+                            "version": 1
+                        }},
+                        "FromPointRef": {
+                            "ref": "RUT:ScheduledStopPoint:ryen_t",
+                            "version": 1
+                        },
+                        "ToPointRef": {
+                            "ref": "RUT:ScheduledStopPoint:holtet",
+                            "version": 1
+                        },
+                        "id": "RUT:ServiceLink:ryen_to_holtet",
+                        "version": 1,
+                        "Distance": 300
+                    }
+                ]},
+                "stopAssignments": {"PassengerStopAssignment": [
+                    {
+                        "QuayRef": {"ref": "NSR:Quay:helsfyr_t-QUAYID"},
+                        "id": "RUT:PassengerStopAssignment:helsfyr_t",
+                        "version": 1,
+                        "order": 1,
+                        "ScheduledStopPointRef": {
+                            "ref": "RUT:ScheduledStopPoint:helfyr_t",
+                            "version": 1
+                        }
+                    },
+                    {
+                        "QuayRef": {"ref": "NSR:Quay:brynseng_t-QUAYID"},
+                        "id": "RUT:PassengerStopAssignment:brynseng_t",
+                        "version": 1,
+                        "order": 2,
+                        "ScheduledStopPointRef": {
+                            "ref": "RUT:ScheduledStopPoint:brynseng_t",
+                            "version": 1
+                        }
+                    },
+                    {
+                        "QuayRef": {"ref": "NSR:Quay:hoyenhall_t-QUAYID"},
+                        "id": "RUT:PassengerStopAssignment:hoyenhall_t",
+                        "version": 1,
+                        "order": 3,
+                        "ScheduledStopPointRef": {
+                            "ref": "RUT:ScheduledStopPoint:hoyenhall_t",
+                            "version": 1
+                        }
+                    },
+                    {
+                        "QuayRef": {"ref": "NSR:Quay:manglerud_t-QUAYID"},
+                        "id": "RUT:PassengerStopAssignment:manglerud_t",
+                        "version": 1,
+                        "order": 4,
+                        "ScheduledStopPointRef": {
+                            "ref": "RUT:ScheduledStopPoint:manglerud_t",
+                            "version": 1
+                        }
+                    },
+                    {
+                        "QuayRef": {"ref": "NSR:Quay:ryen_t-QUAYID"},
+                        "id": "RUT:PassengerStopAssignment:ryen_t",
+                        "version": 1,
+                        "order": 5,
+                        "ScheduledStopPointRef": {
+                            "ref": "RUT:ScheduledStopPoint:hoyenhall_t",
+                            "version": 1
+                        }
+                    },
+                    {
+                        "QuayRef": {"ref": "NSR:Quay:holtet-QUAYID"},
+                        "id": "RUT:PassengerStopAssignment:holtet",
+                        "version": 1,
+                        "order": 6,
+                        "ScheduledStopPointRef": {
+                            "ref": "RUT:ScheduledStopPoint:holtet",
+                            "version": 1
+                        }
+                    }
+                ]},
+                "journeyPatterns": {"JourneyPattern": {
+                    "RouteRef": {
+                        "ref": "RUT:Route:109",
+                        "version": 1
+                    },
+                    "linksInSequence": {"ServiceLinkInJourneyPattern": [
+                        {
+                            "ServiceLinkRef": {
+                                "ref": "RUT:ServiceLink:helsfyr_to_brynseng",
+                                "version": 1
+                            },
+                            "id": "RUT:ServiceLinkInJourneyPattern:helsfyr_to_brynseng",
+                            "version": 1,
+                            "order": 1
+                        },
+                        {
+                            "ServiceLinkRef": {
+                                "ref": "RUT:ServiceLink:brynseng_to_hoyenhall",
+                                "version": 1
+                            },
+                            "id": "RUT:ServiceLinkInJourneyPattern:brynseng_to_hoyenhall",
+                            "version": 1,
+                            "order": 2
+                        },
+                        {
+                            "ServiceLinkRef": {
+                                "ref": "RUT:ServiceLink:hoyenhall_to_manglerud",
+                                "version": 1
+                            },
+                            "id": "RUT:ServiceLinkInJourneyPattern:hoyenhall_to_manglerud",
+                            "version": 1,
+                            "order": 3
+                        },
+                        {
+                            "ServiceLinkRef": {
+                                "ref": "RUT:ServiceLink:manglerud_to_ryen",
+                                "version": 1
+                            },
+                            "id": "RUT:ServiceLinkInJourneyPattern:manglerud_to_ryen",
+                            "version": 1,
+                            "order": 4
+                        },
+                        {
+                            "ServiceLinkRef": {
+                                "ref": "RUT:ServiceLink:ryen_to_holtet",
+                                "version": 1
+                            },
+                            "id": "RUT:ServiceLinkInJourneyPattern:ryen_to_holtet",
+                            "version": 1,
+                            "order": 5
+                        }
+                    ]},
+                    "id": "RUT:JourneyPattern:109",
+                    "version": 1,
+                    "pointsInSequence": {"StopPointInJourneyPattern": [
+                        {
+                            "ForAlighting": false,
+                            "id": "RUT:StopPointInJourneyPattern:helfyr_t",
+                            "DestinationDisplayRef": {
+                                "ref": "RUT:DestinationDisplay:holtet",
+                                "version": 1
+                            },
+                            "version": 1,
+                            "order": 1,
+                            "ScheduledStopPointRef": {
+                                "ref": "RUT:ScheduledStopPoint:helfyr_t",
+                                "version": 1
+                            }
+                        },
+                        {
+                            "id": "RUT:StopPointInJourneyPattern:brynseng_t",
+                            "version": 1,
+                            "order": 2,
+                            "ScheduledStopPointRef": {
+                                "ref": "RUT:ScheduledStopPoint:brynseng_t",
+                                "version": 1
+                            }
+                        },
+                        {
+                            "id": "RUT:StopPointInJourneyPattern:hoyenhall_t",
+                            "version": 1,
+                            "order": 3,
+                            "ScheduledStopPointRef": {
+                                "ref": "RUT:ScheduledStopPoint:hoyenhall_t",
+                                "version": 1
+                            }
+                        },
+                        {
+                            "id": "RUT:StopPointInJourneyPattern:manglerud_t",
+                            "version": 1,
+                            "order": 4,
+                            "ScheduledStopPointRef": {
+                                "ref": "RUT:ScheduledStopPoint:manglerud_t",
+                                "version": 1
+                            }
+                        },
+                        {
+                            "id": "RUT:StopPointInJourneyPattern:ryen_t",
+                            "version": 1,
+                            "order": 5,
+                            "ScheduledStopPointRef": {
+                                "ref": "RUT:ScheduledStopPoint:ryen_t",
+                                "version": 1
+                            }
+                        },
+                        {
+                            "ForBoarding": false,
+                            "id": "RUT:StopPointInJourneyPattern:holtet",
+                            "version": 1,
+                            "order": 6,
+                            "ScheduledStopPointRef": {
+                                "ref": "RUT:ScheduledStopPoint:holtet",
+                                "version": 1
+                            }
+                        }
+                    ]}
+                }},
+                "Network": {
+                    "groupsOfLines": {"GroupOfLines": [
+                        {
+                            "id": "RUT:GroupOfLines:Ruter-Buss-Oslo",
+                            "version": 1,
+                            "Name": "Ruter# buss Oslo"
+                        },
+                        {
+                            "id": "RUT:GroupOfLines:Ruter-Buss-Akershus",
+                            "version": 1,
+                            "Name": "Ruter# buss Akershus"
+                        }
+                    ]},
+                    "AuthorityRef": {
+                        "ref": "RUT:Authority:Ruter",
+                        "version": 1
+                    },
+                    "id": "RUT:Network:RuterBuss",
+                    "version": 1,
+                    "Name": "Ruter# buss"
+                },
+                "destinationDisplays": {"DestinationDisplay": {
+                    "FrontText": "Holtet",
+                    "id": "RUT:DestinationDisplay:holtet",
+                    "version": 1,
+                    "SideText": "Holtet"
+                }},
+                "routePoints": {"RoutePoint": [
+                    {
+                        "projections": {"PointProjection": {
+                            "ProjectToPointRef": {
+                                "ref": "RUT:ScheduledStopPoint:helfyr_t",
+                                "version": 1
+                            },
+                            "id": "RUT:pointprojection:departure",
+                            "version": 1
+                        }},
+                        "id": "RUT:RoutePoint:helsfyr",
+                        "version": 1
+                    },
+                    {
+                        "projections": {"PointProjection": {
+                            "ProjectToPointRef": {
+                                "ref": "RUT:ScheduledStopPoint:holtet",
+                                "version": 1
+                            },
+                            "id": "RUT:PointProjection:arrival",
+                            "version": 1
+                        }},
+                        "id": "RUT:RoutePoint:holtet",
+                        "version": 1
+                    }
+                ]},
+                "scheduledStopPoints": {"ScheduledStopPoint": [
+                    {
+                        "id": "RUT:ScheduledStopPoint:helfyr_t",
+                        "version": 1,
+                        "Name": "Helsfyr T"
+                    },
+                    {
+                        "id": "RUT:ScheduledStopPoint:brynseng_t",
+                        "version": 1,
+                        "Name": "Brynseng T"
+                    },
+                    {
+                        "id": "RUT:ScheduledStopPoint:hoyenhall_t",
+                        "version": 1,
+                        "Name": "HØyenhall"
+                    },
+                    {
+                        "id": "RUT:ScheduledStopPoint:manglerud_t",
+                        "version": 1,
+                        "Name": "Manglerud T"
+                    },
+                    {
+                        "id": "RUT:ScheduledStopPoint:ryen_t",
+                        "version": 1,
+                        "Name": "Ryen T"
+                    },
+                    {
+                        "id": "RUT:ScheduledStopPoint:holtet",
+                        "version": 1,
+                        "Name": "Holtet"
+                    }
+                ]},
+                "id": "RUT:SiteFrame:1",
+                "lines": {"Line": {
+                    "routes": {"RouteRef": {
+                        "ref": "RUT:Route:109",
+                        "version": 1
+                    }},
+                    "OperatorRef": {
+                        "ref": "RUT:Operator:Unibuss",
+                        "version": 1
+                    },
+                    "TransportSubmode": {"BusSubmode": "localBus"},
+                    "PublicCode": 109,
+                    "TransportMode": "bus",
+                    "id": "RUT:Line:109",
+                    "Presentation": {"Colour": "FF0000"},
+                    "version": 1,
+                    "Name": "Morgenbuss Helsfyr - Holtet",
+                    "RepresentedByGroupRef": {
+                        "ref": "RUT:Network:RuterBuss",
+                        "version": 1
+                    }
+                }},
+                "version": 1
+            },
+            "TimetableFrame": {
+                "id": "RUT:TimetableFrame:1",
+                "frequencyGroups": {"RhythmicalJourneyGroup": [
+                    {
+                        "timebands": {"TimebandRef": [
+                            {
+                                "ref": "RUT:Timeband:halfhour",
+                                "version": 1
+                            },
+                            {
+                                "ref": "RUT:Timeband:fullhour",
+                                "version": 1
+                            }
+                        ]},
+                        "FirstDepartureTime": "04:30:00",
+                        "LastDepartureTime": "05:30:00",
+                        "id": "RUT:RhythmicalJourneyGroup:weekdays",
+                        "version": 1
+                    },
+                    {
+                        "timebands": {"TimebandRef": [
+                            {
+                                "ref": "RUT:Timeband:halfhour",
+                                "version": 1
+                            },
+                            {
+                                "ref": "RUT:Timeband:fullhour",
+                                "version": 1
+                            }
+                        ]},
+                        "FirstDepartureTime": "05:30:00",
+                        "LastDepartureTime": "06:30:00",
+                        "id": "RUT:RhythmicalJourneyGroup:saturday",
+                        "version": 1
+                    },
+                    {
+                        "timebands": {"TimebandRef": [
+                            {
+                                "ref": "RUT:Timeband:halfhour",
+                                "version": 1
+                            },
+                            {
+                                "ref": "RUT:Timeband:fullhour",
+                                "version": 1
+                            }
+                        ]},
+                        "FirstDepartureTime": "06:00:00",
+                        "LastDepartureTime": "07:00:00",
+                        "id": "RUT:RhythmicalJourneyGroup:sunday",
+                        "version": 1
+                    }
+                ]},
+                "vehicleJourneys": {
+                    "ServiceJourney": [
+                        {
+                            "DepartureTime": "04:30:00",
+                            "JourneyPatternRef": {
+                                "ref": "RUT:JourneyPattern:109",
+                                "version": 1
+                            },
+                            "OperatorRef": {
+                                "ref": "RUT:Operator:Unibuss",
+                                "version": 1
+                            },
+                            "dayTypes": {"DayTypeRef": {
+                                "ref": "RUT:DayType:weekday",
+                                "version": 1
+                            }},
+                            "id": "RUT:ServiceJourney:109-CODE-0430",
+                            "LineRef": {
+                                "ref": "RUT:Line:109",
+                                "version": 1
+                            },
+                            "version": 1,
+                            "passingTimes": {"TimetabledPassingTime": [
+                                {
+                                    "DepartureTime": "04:30:00",
+                                    "StopPointInJourneyPatternRef": {
+                                        "ref": "RUT:StopPointInJourneyPattern:helfyr_t",
+                                        "version": 1
+                                    },
+                                    "id": "RUT:TimetabledPassingTime:10001",
+                                    "version": 1
+                                },
+                                {
+                                    "DepartureTime": "04:32:00",
+                                    "StopPointInJourneyPatternRef": {
+                                        "ref": "RUT:StopPointInJourneyPattern:brynseng_t",
+                                        "version": 1
+                                    },
+                                    "id": "RUT:TimetabledPassingTime:10001",
+                                    "version": 1
+                                },
+                                {
+                                    "DepartureTime": "04:33:00",
+                                    "StopPointInJourneyPatternRef": {
+                                        "ref": "RUT:StopPointInJourneyPattern:hoyenhall_t",
+                                        "version": 1
+                                    },
+                                    "id": "RUT:TimetabledPassingTime:10001",
+                                    "version": 1
+                                },
+                                {
+                                    "DepartureTime": "04:34:00",
+                                    "StopPointInJourneyPatternRef": {
+                                        "ref": "RUT:StopPointInJourneyPattern:manglerud_t",
+                                        "version": 1
+                                    },
+                                    "id": "RUT:TimetabledPassingTime:10001",
+                                    "version": 1
+                                },
+                                {
+                                    "DepartureTime": "04:35:00",
+                                    "StopPointInJourneyPatternRef": {
+                                        "ref": "RUT:StopPointInJourneyPattern:ryen_t",
+                                        "version": 1
+                                    },
+                                    "id": "RUT:TimetabledPassingTime:10001",
+                                    "version": 1
+                                },
+                                {
+                                    "StopPointInJourneyPatternRef": {
+                                        "ref": "RUT:StopPointInJourneyPattern:holtet",
+                                        "version": 1
+                                    },
+                                    "id": "RUT:TimetabledPassingTime:10001",
+                                    "version": 1,
+                                    "ArrivalTime": "04:40:00"
+                                }
+                            ]}
+                        },
+                        {
+                            "JourneyPatternRef": {
+                                "ref": "RUT:JourneyPattern:109",
+                                "version": 1
+                            },
+                            "TransportSubmode": {"BusSubmode": "localBus"},
+                            "TransportMode": "bus",
+                            "dayTypes": {"DayTypeRef": {
+                                "ref": "RUT:DayType:weekday",
+                                "version": 1
+                            }},
+                            "id": "RUT:ServiceJourney:109-CODE-0500",
+                            "LineRef": {
+                                "ref": "RUT:Line:109",
+                                "version": 1
+                            },
+                            "version": 1,
+                            "passingTimes": {"TimetabledPassingTime": [
+                                {
+                                    "DepartureTime": "05:00:00",
+                                    "StopPointInJourneyPatternRef": {
+                                        "ref": "RUT:StopPointInJourneyPattern:helfyr_t",
+                                        "version": 1
+                                    },
+                                    "id": "RUT:TimetabledPassingTime:0500-1",
+                                    "version": 1
+                                },
+                                {
+                                    "DepartureTime": "05:02:00",
+                                    "StopPointInJourneyPatternRef": {
+                                        "ref": "RUT:StopPointInJourneyPattern:brynseng_t",
+                                        "version": 1
+                                    },
+                                    "id": "RUT:TimetabledPassingTime:0500-2",
+                                    "version": 1
+                                },
+                                {
+                                    "DepartureTime": "05:03:00",
+                                    "StopPointInJourneyPatternRef": {
+                                        "ref": "RUT:StopPointInJourneyPattern:hoyenhall_t",
+                                        "version": 1
+                                    },
+                                    "id": "RUT:TimetabledPassingTime:0500-3",
+                                    "version": 1
+                                },
+                                {
+                                    "DepartureTime": "05:04:00",
+                                    "StopPointInJourneyPatternRef": {
+                                        "ref": "RUT:StopPointInJourneyPattern:manglerud_t",
+                                        "version": 1
+                                    },
+                                    "id": "RUT:TimetabledPassingTime:0500-4",
+                                    "version": 1
+                                },
+                                {
+                                    "DepartureTime": "05:05:00",
+                                    "StopPointInJourneyPatternRef": {
+                                        "ref": "RUT:StopPointInJourneyPattern:ryen_t",
+                                        "version": 1
+                                    },
+                                    "id": "RUT:TimetabledPassingTime:0500-5",
+                                    "version": 1
+                                },
+                                {
+                                    "StopPointInJourneyPatternRef": {
+                                        "ref": "RUT:StopPointInJourneyPattern:holtet",
+                                        "version": 1
+                                    },
+                                    "id": "RUT:TimetabledPassingTime:0500-6",
+                                    "version": 1,
+                                    "ArrivalTime": "05:10:00"
+                                }
+                            ]}
+                        },
+                        {
+                            "JourneyPatternRef": {
+                                "ref": "RUT:JourneyPattern:109",
+                                "version": 1
+                            },
+                            "dayTypes": {"DayTypeRef": [
+                                {
+                                    "ref": "RUT:DayType:weekday",
+                                    "version": 1
+                                },
+                                {
+                                    "ref": "RUT:DayType:saturday",
+                                    "version": 1
+                                }
+                            ]},
+                            "id": "RUT:ServiceJourney:109-CODE-0530",
+                            "LineRef": {
+                                "ref": "RUT:Line:109",
+                                "version": 1
+                            },
+                            "version": 1,
+                            "passingTimes": {"TimetabledPassingTime": [
+                                {
+                                    "DepartureTime": "05:30:00",
+                                    "StopPointInJourneyPatternRef": {
+                                        "ref": "RUT:StopPointInJourneyPattern:helfyr_t",
+                                        "version": 1
+                                    },
+                                    "id": "RUT:TimetabledPassingTime:0530-1",
+                                    "version": 1
+                                },
+                                {
+                                    "DepartureTime": "05:32:00",
+                                    "StopPointInJourneyPatternRef": {
+                                        "ref": "RUT:StopPointInJourneyPattern:brynseng_t",
+                                        "version": 1
+                                    },
+                                    "id": "RUT:TimetabledPassingTime:0530-2",
+                                    "version": 1
+                                },
+                                {
+                                    "DepartureTime": "05:33:00",
+                                    "StopPointInJourneyPatternRef": {
+                                        "ref": "RUT:StopPointInJourneyPattern:hoyenhall_t",
+                                        "version": 1
+                                    },
+                                    "id": "RUT:TimetabledPassingTime:0530-3",
+                                    "version": 1
+                                },
+                                {
+                                    "DepartureTime": "05:34:00",
+                                    "StopPointInJourneyPatternRef": {
+                                        "ref": "RUT:StopPointInJourneyPattern:manglerud_t",
+                                        "version": 1
+                                    },
+                                    "id": "RUT:TimetabledPassingTime:0530-4",
+                                    "version": 1
+                                },
+                                {
+                                    "DepartureTime": "05:35:00",
+                                    "StopPointInJourneyPatternRef": {
+                                        "ref": "RUT:StopPointInJourneyPattern:ryen_t",
+                                        "version": 1
+                                    },
+                                    "id": "RUT:TimetabledPassingTime:0530-5",
+                                    "version": 1
+                                },
+                                {
+                                    "StopPointInJourneyPatternRef": {
+                                        "ref": "RUT:StopPointInJourneyPattern:holtet",
+                                        "version": 1
+                                    },
+                                    "id": "RUT:TimetabledPassingTime:0530-6",
+                                    "version": 1,
+                                    "ArrivalTime": "05:40:00"
+                                }
+                            ]}
+                        },
+                        {
+                            "JourneyPatternRef": {
+                                "ref": "RUT:JourneyPattern:109",
+                                "version": 1
+                            },
+                            "dayTypes": {"DayTypeRef": [
+                                {
+                                    "ref": "RUT:DayType:saturday",
+                                    "version": 1
+                                },
+                                {
+                                    "ref": "RUT:DayType:sunday",
+                                    "version": 1
+                                }
+                            ]},
+                            "id": "RUT:ServiceJourney:109-CODE-0600",
+                            "LineRef": {
+                                "ref": "RUT:Line:109",
+                                "version": 1
+                            },
+                            "version": 1,
+                            "passingTimes": {"TimetabledPassingTime": [
+                                {
+                                    "DepartureTime": "06:00:00",
+                                    "StopPointInJourneyPatternRef": {
+                                        "ref": "RUT:StopPointInJourneyPattern:helfyr_t",
+                                        "version": 1
+                                    },
+                                    "id": "RUT:TimetabledPassingTime:0600-1",
+                                    "version": 1
+                                },
+                                {
+                                    "DepartureTime": "06:02:00",
+                                    "StopPointInJourneyPatternRef": {
+                                        "ref": "RUT:StopPointInJourneyPattern:brynseng_t",
+                                        "version": 1
+                                    },
+                                    "id": "RUT:TimetabledPassingTime:0600-2",
+                                    "version": 1
+                                },
+                                {
+                                    "DepartureTime": "06:03:00",
+                                    "StopPointInJourneyPatternRef": {
+                                        "ref": "RUT:StopPointInJourneyPattern:hoyenhall_t",
+                                        "version": 1
+                                    },
+                                    "id": "RUT:TimetabledPassingTime:0600-3",
+                                    "version": 1
+                                },
+                                {
+                                    "DepartureTime": "06:04:00",
+                                    "StopPointInJourneyPatternRef": {
+                                        "ref": "RUT:StopPointInJourneyPattern:manglerud_t",
+                                        "version": 1
+                                    },
+                                    "id": "RUT:TimetabledPassingTime:0600-4",
+                                    "version": 1
+                                },
+                                {
+                                    "DepartureTime": "06:06:00",
+                                    "StopPointInJourneyPatternRef": {
+                                        "ref": "RUT:StopPointInJourneyPattern:ryen_t",
+                                        "version": 1
+                                    },
+                                    "id": "RUT:TimetabledPassingTime:0600-5",
+                                    "version": 1
+                                },
+                                {
+                                    "StopPointInJourneyPatternRef": {
+                                        "ref": "RUT:StopPointInJourneyPattern:holtet",
+                                        "version": 1
+                                    },
+                                    "id": "RUT:TimetabledPassingTime:0600-6",
+                                    "version": 1,
+                                    "ArrivalTime": "06:10:00"
+                                }
+                            ]}
+                        },
+                        {
+                            "DepartureTime": "06:30:00",
+                            "JourneyPatternRef": {
+                                "ref": "RUT:JourneyPattern:109",
+                                "version": 1
+                            },
+                            "dayTypes": {"DayTypeRef": [
+                                {
+                                    "ref": "RUT:DayType:saturday",
+                                    "version": 1
+                                },
+                                {
+                                    "ref": "RUT:DayType:sunday",
+                                    "version": 1
+                                }
+                            ]},
+                            "id": "RUT:ServiceJourney:109-CODE-0630",
+                            "LineRef": {
+                                "ref": "RUT:Line:109",
+                                "version": 1
+                            },
+                            "version": 1,
+                            "passingTimes": {"TimetabledPassingTime": [
+                                {
+                                    "DepartureTime": "06:30:00",
+                                    "StopPointInJourneyPatternRef": {
+                                        "ref": "RUT:StopPointInJourneyPattern:helfyr_t",
+                                        "version": 1
+                                    },
+                                    "id": "RUT:TimetabledPassingTime:0630-1",
+                                    "version": 1
+                                },
+                                {
+                                    "DepartureTime": "06:32:00",
+                                    "StopPointInJourneyPatternRef": {
+                                        "ref": "RUT:StopPointInJourneyPattern:brynseng_t",
+                                        "version": 1
+                                    },
+                                    "id": "RUT:TimetabledPassingTime:0630-2",
+                                    "version": 1
+                                },
+                                {
+                                    "DepartureTime": "06:33:00",
+                                    "StopPointInJourneyPatternRef": {
+                                        "ref": "RUT:StopPointInJourneyPattern:hoyenhall_t",
+                                        "version": 1
+                                    },
+                                    "id": "RUT:TimetabledPassingTime:0630-3",
+                                    "version": 1
+                                },
+                                {
+                                    "DepartureTime": "06:34:00",
+                                    "StopPointInJourneyPatternRef": {
+                                        "ref": "RUT:StopPointInJourneyPattern:manglerud_t",
+                                        "version": 1
+                                    },
+                                    "id": "RUT:TimetabledPassingTime:0630-4",
+                                    "version": 1
+                                },
+                                {
+                                    "DepartureTime": "06:35:00",
+                                    "StopPointInJourneyPatternRef": {
+                                        "ref": "RUT:StopPointInJourneyPattern:ryen_t",
+                                        "version": 1
+                                    },
+                                    "id": "RUT:TimetabledPassingTime:0630-5",
+                                    "version": 1
+                                },
+                                {
+                                    "StopPointInJourneyPatternRef": {
+                                        "ref": "RUT:StopPointInJourneyPattern:holtet",
+                                        "version": 1
+                                    },
+                                    "id": "RUT:TimetabledPassingTime:0630-6",
+                                    "version": 1,
+                                    "ArrivalTime": "06:40:00"
+                                }
+                            ]}
+                        },
+                        {
+                            "JourneyPatternRef": {
+                                "ref": "RUT:JourneyPattern:109",
+                                "version": 1
+                            },
+                            "dayTypes": {"DayTypeRef": {
+                                "ref": "RUT:DayType:sunday",
+                                "version": 1
+                            }},
+                            "id": "RUT:ServiceJourney:109-CODE-0700",
+                            "LineRef": {
+                                "ref": "RUT:Line:109",
+                                "version": 1
+                            },
+                            "version": 1,
+                            "passingTimes": {"TimetabledPassingTime": [
+                                {
+                                    "DepartureTime": "07:00:00",
+                                    "StopPointInJourneyPatternRef": {
+                                        "ref": "RUT:StopPointInJourneyPattern:helfyr_t",
+                                        "version": 1
+                                    },
+                                    "id": "RUT:TimetabledPassingTime:0700-1",
+                                    "version": 1
+                                },
+                                {
+                                    "DepartureTime": "07:02:00",
+                                    "StopPointInJourneyPatternRef": {
+                                        "ref": "RUT:StopPointInJourneyPattern:brynseng_t",
+                                        "version": 1
+                                    },
+                                    "id": "RUT:TimetabledPassingTime:0700-2",
+                                    "version": 1
+                                },
+                                {
+                                    "DepartureTime": "07:03:00",
+                                    "StopPointInJourneyPatternRef": {
+                                        "ref": "RUT:StopPointInJourneyPattern:hoyenhall_t",
+                                        "version": 1
+                                    },
+                                    "id": "RUT:TimetabledPassingTime:0700-3",
+                                    "version": 1
+                                },
+                                {
+                                    "DepartureTime": "07:04:00",
+                                    "StopPointInJourneyPatternRef": {
+                                        "ref": "RUT:StopPointInJourneyPattern:manglerud_t",
+                                        "version": 1
+                                    },
+                                    "id": "RUT:TimetabledPassingTime:0700-4",
+                                    "version": 1
+                                },
+                                {
+                                    "DepartureTime": "07:07:00",
+                                    "StopPointInJourneyPatternRef": {
+                                        "ref": "RUT:StopPointInJourneyPattern:ryen_t",
+                                        "version": 1
+                                    },
+                                    "id": "RUT:TimetabledPassingTime:0700-5",
+                                    "version": 1
+                                },
+                                {
+                                    "StopPointInJourneyPatternRef": {
+                                        "ref": "RUT:StopPointInJourneyPattern:holtet",
+                                        "version": 1
+                                    },
+                                    "id": "RUT:TimetabledPassingTime:0700-6",
+                                    "version": 1,
+                                    "ArrivalTime": "07:10:00"
+                                }
+                            ]}
+                        }
+                    ],
+                    "TemplateServiceJourney": {
+                        "RhythmicalJourneyGroupRef": {
+                            "ref": "RUT:RhythmicalJourneyGroup:weekdays",
+                            "version": 1
+                        },
+                        "JourneyPatternRef": {
+                            "ref": "RUT:JourneyPattern:109",
+                            "version": 1
+                        },
+                        "dayTypes": {"DayTypeRef": {
+                            "ref": "RUT:DayType:weekday",
+                            "version": 1
+                        }},
+                        "id": "RUT:TemplateServiceJourney:109-weekdays",
+                        "LineRef": {
+                            "ref": "RUT:Line:109",
+                            "version": 1
+                        },
+                        "version": 1,
+                        "passingTimes": {"TimetabledPassingTime": [
+                            {
+                                "DepartureTime": "00:30:00",
+                                "StopPointInJourneyPatternRef": {
+                                    "ref": "RUT:StopPointInJourneyPattern:helfyr_t",
+                                    "version": 1
+                                },
+                                "id": "RUT:TimetabledPassingTime:10001",
+                                "version": 1
+                            },
+                            {
+                                "DepartureTime": "00:32:00",
+                                "StopPointInJourneyPatternRef": {
+                                    "ref": "RUT:StopPointInJourneyPattern:brynseng_t",
+                                    "version": 1
+                                },
+                                "id": "RUT:TimetabledPassingTime:10001",
+                                "version": 1
+                            },
+                            {
+                                "DepartureTime": "00:33:00",
+                                "StopPointInJourneyPatternRef": {
+                                    "ref": "RUT:StopPointInJourneyPattern:hoyenhall_t",
+                                    "version": 1
+                                },
+                                "id": "RUT:TimetabledPassingTime:10001",
+                                "version": 1
+                            },
+                            {
+                                "DepartureTime": "00:34:00",
+                                "StopPointInJourneyPatternRef": {
+                                    "ref": "RUT:StopPointInJourneyPattern:manglerud_t",
+                                    "version": 1
+                                },
+                                "id": "RUT:TimetabledPassingTime:10001",
+                                "version": 1
+                            },
+                            {
+                                "DepartureTime": "00:37:00",
+                                "StopPointInJourneyPatternRef": {
+                                    "ref": "RUT:StopPointInJourneyPattern:ryen_t",
+                                    "version": 1
+                                },
+                                "id": "RUT:TimetabledPassingTime:10001",
+                                "version": 1
+                            },
+                            {
+                                "StopPointInJourneyPatternRef": {
+                                    "ref": "RUT:StopPointInJourneyPattern:holtet",
+                                    "version": 1
+                                },
+                                "id": "RUT:TimetabledPassingTime:10001",
+                                "version": 1,
+                                "ArrivalTime": "00:40:00"
+                            }
+                        ]}
+                    }
+                },
+                "version": 1
+            },
+            "ResourceFrame": {
+                "organisations": {
+                    "Operator": {
+                        "LegalName": "UNIBUSS AS",
+                        "CustomerServiceContactDetails": {
+                            "Phone": "0047 177",
+                            "Url": "www.ruter.no"
+                        },
+                        "CompanyNumber": 985615616,
+                        "ContactDetails": {
+                            "Email": "post@unibuss.no",
+                            "Phone": "22 08 43 00",
+                            "Url": "www.unibuss.no"
+                        },
+                        "PrimaryMode": "air",
+                        "OperatorActivities": "passenger",
+                        "id": "RUT:Operator:Unibuss",
+                        "version": 1,
+                        "Name": "Unibuss"
+                    },
+                    "Authority": {
+                        "LegalName": "RUTER AS",
+                        "CompanyNumber": 991609407,
+                        "ContactDetails": {
+                            "Email": "post@ruter.no",
+                            "Phone": "22 08 43 00",
+                            "Url": "www.ruter.no"
+                        },
+                        "Address": {
+                            "AddressLine1": "Dronningens gate 40, 4.etg.",
+                            "Town": "Oslo",
+                            "PostCode": "0154"
+                        },
+                        "PublicCode": "RUT",
+                        "id": "RUT:Authority:Ruter",
+                        "version": 1,
+                        "PrivateContactDetails": {
+                            "Email": "post@unibuss.no",
+                            "Phone": "400 06 700",
+                            "Url": "intern.ruter.no"
+                        },
+                        "Name": "Ruter#"
+                    }
+                },
+                "id": "RUT:ResourceFrame:1",
+                "version": 1
+            },
+            "ServiceCalendarFrame": {
+                "dayTypeAssignments": {"DayTypeAssignment": [
+                    {
+                        "DayTypeRef": {"ref": "RUT:DayType:weekday"},
+                        "OperatingPeriodRef": {"ref": "RUT:OperatingPeriod:2017"},
+                        "id": "RUT:DayTypeAssignment:1",
+                        "version": 1,
+                        "order": 1
+                    },
+                    {
+                        "DayTypeRef": {"ref": "RUT:DayType:saturday"},
+                        "OperatingPeriodRef": {"ref": "RUT:OperatingPeriod:2017"},
+                        "id": "RUT:DayTypeAssignment:2",
+                        "version": 1,
+                        "order": 2
+                    },
+                    {
+                        "DayTypeRef": {"ref": "RUT:DayType:sunday"},
+                        "OperatingPeriodRef": {"ref": "RUT:OperatingPeriod:2017"},
+                        "id": "RUT:DayTypeAssignment:3",
+                        "version": 1,
+                        "order": 3
+                    },
+                    {
+                        "DayTypeRef": {"ref": "RUT:DayType:weekday"},
+                        "isAvailable": false,
+                        "id": "RUT:DayTypeAssignment:X",
+                        "version": 1,
+                        "Date": "2017-05-17",
+                        "order": 3
+                    }
+                ]},
+                "dayTypes": {"DayType": [
+                    {
+                        "id": "RUT:DayType:month",
+                        "version": 1,
+                        "properties": {"PropertyOfDay": [
+                            {"MonthOfYear": "--04"},
+                            {"MonthOfYear": "--04"},
+                            {"MonthOfYear": "--05"},
+                            {"MonthOfYear": "--06"}
+                        ]},
+                        "Name": "sommer"
+                    },
+                    {
+                        "id": "RUT:DayType:weekday",
+                        "version": 1,
+                        "properties": {"PropertyOfDay": {"DaysOfWeek": "Monday Tuesday Wednesday Thursday Friday"}},
+                        "Name": "Ukedager (mandag til fredag)"
+                    },
+                    {
+                        "id": "RUT:DayType:saturday",
+                        "version": 1,
+                        "properties": {"PropertyOfDay": {"DaysOfWeek": "Saturday"}},
+                        "Name": "LØrdag"
+                    },
+                    {
+                        "id": "RUT:DayType:sunday",
+                        "version": 1,
+                        "properties": {"PropertyOfDay": {"DaysOfWeek": "Sunday"}},
+                        "Name": "SØndag"
+                    }
+                ]},
+                "operatingPeriods": {"OperatingPeriod": {
+                    "FromDate": "2017-01-01T04:00:00",
+                    "ToDate": "2017-12-31T23:30:00",
+                    "id": "RUT:OperatingPeriod:2017",
+                    "version": 1
+                }},
+                "id": "RUT:ServiceCalendarFrame:01",
+                "version": 1,
+                "ServiceCalendar": {
+                    "timebands": {"Timeband": [
+                        {
+                            "EndTime": "00:00:00",
+                            "StartTime": "00:00:00",
+                            "id": "RUT:Timeband:fullhour",
+                            "version": 1
+                        },
+                        {
+                            "EndTime": "00:30:00",
+                            "StartTime": "00:30:00",
+                            "id": "RUT:Timeband:halfhour",
+                            "version": 1
+                        }
+                    ]},
+                    "id": "RUT:ServiceCalendar:01",
+                    "version": 1
+                }
+            }
+        },
+        "created": "2016-08-22T00:00:00Z",
+        "codespaces": {"Codespace": [
+            {
+                "Description": "Nasjonalt StoppestedRegister",
+                "Xmlns": "NSR",
+                "id": "nsr",
+                "XmlnsUrl": "http://www.rutebanken.org/ns/nsr"
+            },
+            {
+                "Description": "Ruter#",
+                "Xmlns": "RUT",
+                "id": "rut",
+                "XmlnsUrl": "http://www.rutebanken.org/ns/rut"
+            },
+            {
+                "Description": "Unibuss",
+                "Xmlns": "UNI",
+                "id": "uni",
+                "XmlnsUrl": "http://www.rutebanken.org/ns/uni"
+            }
+        ]},
+        "id": "RUT:CompositeFrame:1",
+        "validityConditions": {"AvailabilityCondition": {
+            "FromDate": "2016-03-04T00:00:00.0Z",
+            "id": "RUT:AvailabilityCondition:cf01",
+            "version": 1
+        }},
+        "version": 1
+    }},
+    "xmlns": "http://www.netex.org.uk/netex",
+    "xmlns:gml": "http://www.opengis.net/gml/3.2",
+    "ParticipantRef": "NSR",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "xmlns:siri": "http://www.siri.org.uk/siri",
+    "version": "1.08:NO-NeTEx-networktimetable:1.3"
+}}

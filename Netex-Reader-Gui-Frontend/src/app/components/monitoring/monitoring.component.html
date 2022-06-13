@@ -28,29 +28,38 @@
 
   <div class="row" style="padding-top: 20px;">
     <div class="col-md-6">
-      <div style="height:20vh; width:40vw;">
-        <canvas baseChart 
-          [data]="pieChartData" 
-          [labels]="pieChartLabels" 
-          [chartType]="pieChartType"
-          [options]="pieChartOptions"
-          [plugins]="pieChartPlugins"
-          [colors]="pieChartColors"
-          [legend]="pieChartLegend">
-        </canvas>
+      <div class="card bg-light text-dark">
+        <div class="card-body" style="height:45vh; width:40vw;">
+          <div style="height:20vh; width:40vw;">
+            <canvas baseChart 
+              [data]="pieChartData" 
+              [labels]="pieChartLabels" 
+              [chartType]="pieChartType"
+              [options]="pieChartOptions"
+              [plugins]="pieChartPlugins"
+              [colors]="pieChartColors"
+              [legend]="pieChartLegend">
+            </canvas>
+          </div>
+        </div>
       </div>
+      
     </div>
     <div class="col-md-6">
-      <div style="height:20vh; width:40vw;">
-        <canvas baseChart 
-          [data]="pieChartData1" 
-          [labels]="pieChartLabels1" 
-          [chartType]="pieChartType1"
-          [options]="pieChartOptions1"
-          [plugins]="pieChartPlugins1"
-          [colors]="pieChartColors"
-          [legend]="pieChartLegend1">
-        </canvas>
+      <div class="card bg-light text-dark">
+        <div class="card-body" style="height:45vh; width:40vw;">
+          <div >
+            <canvas baseChart 
+              [data]="pieChartData1" 
+              [labels]="pieChartLabels1" 
+              [chartType]="pieChartType1"
+              [options]="pieChartOptions1"
+              [plugins]="pieChartPlugins1"
+              [colors]="pieChartColors"
+              [legend]="pieChartLegend1">
+            </canvas>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -59,7 +68,7 @@
 
 
 
-<div style="text-align:center; margin-top: 200px;">
+<div style="text-align:center; margin-top: 30px;">
   <a  routerLink="/monitoring/endpoints" style="padding: 12px 20px;margin: 0 12px;"   class="btn btn-primary col-3 me-2">View endpoints</a>
   <a routerLink="/monitoring/components" style="padding: 12px 20px; margin: 0 12px;" class="btn btn-primary col-3 me-2">View Components</a>
   <a routerLink="/monitoring/files" style="padding: 12px 20px; margin: 0 12px; " class="btn btn-primary col-3 me-2">View Files</a>

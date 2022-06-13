@@ -4,6 +4,7 @@ import com.Netex.Reader.Gui.models.ConvertedFile;
 import com.Netex.Reader.Gui.models.NetexSchema.Netex;
 import com.Netex.Reader.Gui.repository.ConvertedFileRepo;
 import com.Netex.Reader.Gui.repository.FileRepo;
+import com.github.opendevl.JFlat;
 import com.google.gson.GsonBuilder;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -40,6 +41,7 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.*;
+import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -150,39 +152,36 @@ public class ConvertFilesImpl implements ConvertFiles{
                 .writer(new ItemWriter<Netex>() {
                     @Override
                     public void write(List<? extends Netex> list) throws Exception {
-                        //log.info(list.toString());
                         String jsonStr = new GsonBuilder().setPrettyPrinting().create().toJson(list).toString();
-                        /*log.info(jsonStr);
-                        String[] members = jsonStr.split("\"members\"");
-                        log.info(members[1])*/;
-                        JSONTokener tokener = new JSONTokener(jsonStr);
-                        JSONArray jsonArray = new JSONArray(tokener);
-                        String csv = CDL.toString(jsonArray);
+                        JFlat flatMe = new JFlat(jsonStr);
+                        List<Object[]> json2csv = flatMe.json2Sheet().getJsonAsSheet();
                         File convFile=null;
                         String fileName = file.getName();
                         int i = file.getName().lastIndexOf('.');
                         String name = file.getName().substring(0,i);
-                        //log.info(name);
                         convFile = new File( "files/output/"+name+".csv" );
-                        FileOutputStream fos = new FileOutputStream(convFile);
-                        byte[] myBytes = csv.getBytes();
-                        fos.write(myBytes);
-                        fos.close();
-                        com.Netex.Reader.Gui.models.File file1 = fileRepo.getFileByName(fileName);
-                        ConvertedFile convertedFile =new ConvertedFile();
-                        convertedFile.setName(convFile.getName());
-                        convertedFile.setType("text/csv");
-                        convertedFile.setData(myBytes);
-                        convertedFile.setFile(file1);
-                        convertedFileRepo.save(convertedFile);
-                        /*String jsonStr= gson.toJson(list);
-                        FileUtils.writeStringToFile(file, jsonStr, true);*/
+
+                        flatMe.json2Sheet().write2csv(convFile.getPath());
+                        Charset charset = StandardCharsets.UTF_8;
+
+                        try (InputStream in = new FileInputStream(convFile)) {
+                            byte[] bytes = new byte[(int) convFile.length()];
+                            in.read(bytes);
+                            com.Netex.Reader.Gui.models.File file1 = fileRepo.getFileByName(fileName);
+                            ConvertedFile convertedFile =new ConvertedFile();
+                            convertedFile.setName(convFile.getName());
+                            convertedFile.setType("text/csv");
+                            convertedFile.setData(bytes);
+                            convertedFile.setFile(file1);
+                            convertedFileRepo.save(convertedFile);
+                        }
                     }
                 })
                 .build();
         return jobBuilderFactory.get("netex-data-loader-job")
                 .start(step1).build();
     }
+
 
     public Job netexJsonJob(File file) {
         Step step1 = stepBuilderFactory.get("PublicationDelivery")

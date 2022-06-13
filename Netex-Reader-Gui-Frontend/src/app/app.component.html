@@ -8,23 +8,20 @@
         <hr>
         <ul class="list-group list-group-flush menu">
             <li class="list-group-item"><a (click)="toggleSidebar()" routerLink="/home"><span><i class="fa-solid fa-house-user"></i></span> Home</a></li>
-            <li *ngIf="isAdmin" class="list-group-item"><a (click)="toggleSidebar()" routerLink="/users/list"><span><i class="fa-solid fa-users"></i></span> Users List</a></li>
-            <li class="list-group-item">
+            <li *ngIf="userIsAuthenticated && isAdmin" class="list-group-item"><a (click)="toggleSidebar()" routerLink="/users/list"><span><i class="fa-solid fa-users"></i></span> Users List</a></li>
+            <li *ngIf="userIsAuthenticated && isAdmin || (userIsAuthenticated && isUser)" class="list-group-item">
                 <a style="margin: 0;" data-toggle="collapse" data-target="#demo"><span><i class="fa-solid fa-file-pen"></i></span> Files</a>
                 <ol id="demo" class="list-group list-group-flush collapse" style="padding-top: 20px;">
-                    <li  class="list-group-item listhover active"><a (click)="toggleSidebar()" routerLink="/file/input"><span><i class="fa-solid fa-file-circle-plus"></i></span> Add a new file</a></li>
-                    <li *ngIf="isAdmin"  class="list-group-item listhover active"><a (click)="toggleSidebar()" routerLink="/file/list"><span><i class="fa-solid fa-file-arrow-down"></i></span> Files List</a></li>
+                    <li *ngIf="(userIsAuthenticated && isAdmin) || (userIsAuthenticated && isUser)"  class="list-group-item listhover active"><a (click)="toggleSidebar()" routerLink="/file/input"><span><i class="fa-solid fa-file-circle-plus"></i></span> Add a new file</a></li>
+                    <li *ngIf="(userIsAuthenticated && isAdmin)"  class="list-group-item listhover active"><a (click)="toggleSidebar()" routerLink="/file/list"><span><i class="fa-solid fa-file-arrow-down"></i></span> Files List</a></li>
                 </ol>
             </li>
-            <li *ngIf="isAdmin" class="list-group-item"><a (click)="toggleSidebar()" routerLink="/history"><span><i class="fa-solid fa-clock-rotate-left"></i></span> History</a></li>
-            <li class="list-group-item"><a (click)="toggleSidebar()" routerLink="/personalHistory"><span><i class="fa-solid fa-clock-rotate-left"></i></span> Personal History</a></li>
-            <li *ngIf="isAdmin" class="list-group-item"><a (click)="toggleSidebar()" routerLink="/addDestination"><i class="fa-solid fa-map-location-dot"></i><span> Destination</span></a></li>
-            <li *ngIf="isAdmin" class="list-group-item"><a (click)="toggleSidebar()" routerLink="/monitoring"><i class="fa-brands fa-watchman-monitoring"></i><span> Routes Monitoring</span></a></li>
+            <li *ngIf="isAdmin && userIsAuthenticated" class="list-group-item"><a (click)="toggleSidebar()" routerLink="/history"><span><i class="fa-solid fa-clock-rotate-left"></i></span> History</a></li>
+            <li *ngIf="(userIsAuthenticated && isAdmin) || (userIsAuthenticated && isUser)" class="list-group-item"><a (click)="toggleSidebar()" routerLink="/personalHistory"><span><i class="fa-solid fa-clock-rotate-left"></i></span> Personal History</a></li>
+            <li *ngIf="userIsAuthenticated && isAdmin" class="list-group-item"><a (click)="toggleSidebar()" routerLink="/addDestination"><i class="fa-solid fa-map-location-dot"></i><span> Destination</span></a></li>
+            <li *ngIf="userIsAuthenticated && isAdmin  " class="list-group-item"><a (click)="toggleSidebar()" routerLink="/monitoring"><i class="fa-brands fa-watchman-monitoring"></i><span> Routes Monitoring</span></a></li>
             
         </ul>
-        <!-- <div *ngIf="userIsAuthenticated" style="text-align: center; margin-top: 25px;">
-            <button class="btn btn-success" (click)=" logout()"><span><i class="fa-solid fa-arrow-right-from-bracket"></i></span> Logout</button>
-        </div> -->
     </ng-sidebar>
     <div ng-sidebar-content>
         <nav class="navbar navbar-expand-lg  bg-light navbar-light" style="background-color: #f4f4f4;">
@@ -46,17 +43,6 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto align-items-center">
-                  <!-- <li class="nav-item">
-                    <a class="nav-link mx-2" href="#!"><i class="fas fa-solid fa-house-user"></i> Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link mx-2" href="https://tn.talan.com/">
-                      <i class="fas fa-bell pe-2"></i>About Us
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link mx-2" href="https://tn.talan.com/a-propos/nous-contacter/"><i class="fas fa-heart pe-2"></i>Contact</a>
-                  </li> -->
                   <li *ngIf="!userIsAuthenticated" class="nav-item ms-3">
                     <a class="btn btn-outline-primary"  routerLink="/register">Sign up</a>
                   </li>

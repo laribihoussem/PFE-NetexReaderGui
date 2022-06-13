@@ -1,38 +1,36 @@
 
 r
-java:S1192"VDefine a constant instead of duplicating this literal "netex-data-loader-job" 3 times.(–ÎÌÕúÿÿÿÿ
-d
-java:S1192~"NDefine a constant instead of duplicating this literal "files/output/" 3 times.(åè§Ö
+java:S1192"VDefine a constant instead of duplicating this literal "netex-data-loader-job" 3 times.(–ÎÌÕúÿÿÿÿ
+l
+java:S1192€"NDefine a constant instead of duplicating this literal "files/output/" 3 times.(åè§Ö8š‚½õ‘0
 i
-java:S1192e"TDefine a constant instead of duplicating this literal "PublicationDelivery" 4 times.(¥ñ¸;
+java:S1192g"TDefine a constant instead of duplicating this literal "PublicationDelivery" 4 times.(¥ñ¸;
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(·òŒÛüÿÿÿÿ
-d
-java:S2095"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(Âî¢·
 e
-java:S2095Ë"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(Âî¢·
+java:S2095"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(Âî¢·
 e
-java:S2095§"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(Âî¢·
+java:S2095Ê"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(Âî¢·
 [
-java:S1858r"@"toJson" returns a string, there's no need to call "toString()".(ÔÌ¦ùÿÿÿÿ
-Q	java:S125}"<This block of commented-out lines of code should be removed.(èÑã
-Y	java:S125™"<This block of commented-out lines of code should be removed.(ï©‰Î8²ˆ¡Æ‹0
+java:S1858t"@"toJson" returns a string, there's no need to call "toString()".(ÔÌ¦ùÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(èÑã
 \
-java:S1858š"@"toJson" returns a string, there's no need to call "toString()".(ÔÌ¦ùÿÿÿÿ
-?
-java:S1116"Remove this empty statement.(”î³Íÿÿÿÿÿ8öä Æ‹0
-Q	java:S125›"<This block of commented-out lines of code should be removed.(„˜‰F
-R	java:S125¥"<This block of commented-out lines of code should be removed.(èÑã
-W	java:S125²"<This block of commented-out lines of code should be removed.(½•øôÿÿÿÿÿ
+java:S1858›"@"toJson" returns a string, there's no need to call "toString()".(ÔÌ¦ùÿÿÿÿ
+I
+java:S1481"-Remove this unused "json2csv" local variable.(‰–ğõüÿÿÿÿ
+O
+java:S1481¥",Remove this unused "charset" local variable.(©±û¼şÿÿÿÿ8—×»õ‘0
+f
+java:S2674©"JCheck the return value of the "read" call to see how many bytes were read.(€Ö¨ÿÿÿÿÿ
 \
-java:S1858Ã"@"toJson" returns a string, there's no need to call "toString()".(ÔÌ¦ùÿÿÿÿ
-^	java:S125Ä"<This block of commented-out lines of code should be removed.(œ³Š ûÿÿÿÿ8ƒå Æ‹0
-R	java:S125É"<This block of commented-out lines of code should be removed.(èÑã
-W	java:S125Ö"<This block of commented-out lines of code should be removed.(½•øôÿÿÿÿÿ
+java:S1858Â"@"toJson" returns a string, there's no need to call "toString()".(ÔÌ¦ùÿÿÿÿ
+W	java:S125Ã"<This block of commented-out lines of code should be removed.(œ³Š ûÿÿÿÿ
+R	java:S125È"<This block of commented-out lines of code should be removed.(èÑã
+^	java:S125Õ"<This block of commented-out lines of code should be removed.(½•øôÿÿÿÿÿ8ç¯ºõ‘0
 P
-java:S1874â"4Remove this use of "OutputFormat"; it is deprecated.(Ò‘ ¨úÿÿÿÿ
+java:S1874á"4Remove this use of "OutputFormat"; it is deprecated.(Ò‘ ¨úÿÿÿÿ
 P
-java:S1874â"4Remove this use of "OutputFormat"; it is deprecated.(Ò‘ ¨úÿÿÿÿ
+java:S1874á"4Remove this use of "OutputFormat"; it is deprecated.(Ò‘ ¨úÿÿÿÿ
 Q
-java:S1874è"5Remove this use of "XMLSerializer"; it is deprecated.(Í›³½üÿÿÿÿ
+java:S1874ç"5Remove this use of "XMLSerializer"; it is deprecated.(Í›³½üÿÿÿÿ
 Q
-java:S1874è"5Remove this use of "XMLSerializer"; it is deprecated.(Í›³½üÿÿÿÿ
+java:S1874ç"5Remove this use of "XMLSerializer"; it is deprecated.(Í›³½üÿÿÿÿ

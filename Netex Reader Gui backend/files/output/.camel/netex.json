@@ -1,0 +1,98 @@
+{"PublicationDelivery": {
+    "PublicationTimestamp": "2020-08-14T12:29:05Z",
+    "dataObjects": {"CompositeFrame": {
+        "TypeOfFrameRef": {
+            "ref": "FR1:TypeOfFrame:NETEX_IDF:",
+            "content": "version=\"1.04:FR1-NETEX_IDF2.0\""
+        },
+        "frames": {"GeneralFrame": [
+            {
+                "TypeOfFrameRef": {
+                    "ref": "FR1:TypeOfFrame:NETEX_COMMUN:",
+                    "content": "version=\"1.04:FR1-NETEX_COMMUN2.1\""
+                },
+                "created": "2020-08-14T12:29:05Z",
+                "members": {
+                    "Operator": {
+                        "id": "�",
+                        "version": "any",
+                        "�": "",
+                        "content": "�"
+                    },
+                    "ResponsibilitySet": {
+                        "id": "� ",
+                        "version": "any"
+                    },
+                    "Notice": {
+                        "id": "�",
+                        "version": "any",
+                        "content": "�"
+                    },
+                    "TypeOfEntity": {
+                        "id": "�",
+                        "version": "any",
+                        "Name": "CT2"
+                    },
+                    "SchematicMap": {
+                        "id": "�",
+                        "version": "any",
+                        "content": "�"
+                    },
+                    "OrganisationalUnit": {
+                        "id": "�",
+                        "version": "any",
+                        "content": "�"
+                    }
+                },
+                "id": "FR1:GeneralFrame:NETEX_COMMUNC00004:LOC",
+                "version": 2
+            },
+            {
+                "TypeOfFrameRef": {
+                    "ref": "FR1:TypeOfFrame:NETEX_LIGNE:",
+                    "content": "version=\"1.04:FR1-NETEX_COMMUN2.1\""
+                },
+                "created": "2020-08-14T12:29:05Z",
+                "members": {
+                    "Line": {
+                        "id": "�",
+                        "version": "any",
+                        "�": "",
+                        "content": "�"
+                    },
+                    "GroupOfLines": {
+                        "id": "�",
+                        "version": "any",
+                        "�": "",
+                        "content": "�"
+                    },
+                    "Network": {
+                        "id": "�",
+                        "version": "any",
+                        "content": "�"
+                    },
+                    "AvailabilityCondition": {
+                        "id": "�",
+                        "version": "any",
+                        "content": "�"
+                    }
+                },
+                "id": "FR1:GeneralFrame:NETEX_LIGNE-C00004:LOC",
+                "version": 2
+            }
+        ]},
+        "created": "2020-08-\r\n14T12:29:05Z",
+        "id": "FR1:CompositeFrame:NETEX_IDF-C00004:LOC",
+        "version": 2
+    }},
+    "xmlns:gml": "http://www.opengis.net/gml/3.2",
+    "xmlns": "http://www.netex.org.uk/netex",
+    "ParticipantRef": "FR1-LIGNE",
+    "xmlns:core": "http://www.govtalk.gov.uk/core",
+    "xmlns:xlink": "http://www.w3.org/1999/xlink",
+    "xsi:schemaLocation": "http://www.netex.org.uk/netex\r\n../../xsd/NeTEx_publication.xsd",
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "xmlns:siri": "http://www.siri.org.uk/siri",
+    "version": "1.04:FR1-NETEX-2.0-d",
+    "xmlns:ifopt": "http://www.ifopt.org.uk/ifopt"
+}}

@@ -1,0 +1,366 @@
+[
+  {
+    "PublicationTimestamp": "houssem",
+    "ParticipantRef": "lar",
+    "dataObjects": {
+      "name": "houss",
+      "CompositeFrames": {
+        "groupId": "org.springframework.boot",
+        "artifactId": "spring-boot-starter-test",
+        "scope": "test",
+        "frames": {
+          "GeneralFrame": [
+            {
+              "TypeOfFrameRef": "version\u003d\"1.04:FR1-NETEX_COMMUN2.1\"",
+              "members": {
+                "OrganisationalUnit": [
+                  {
+                    "Name": "N4 MOBILITES",
+                    "TypeOfOrganisationPartRef": {
+                      "ref": "FR1_Organisation"
+                    }
+                  }
+                ],
+                "Notice": [
+                  {
+                    "id": "FR1:Notice:C00665:",
+                    "version": "any",
+                    "Name": "Réservation obligatoire",
+                    "Text": "Appeler le XXXXXX pour réserver"
+                  }
+                ],
+                "ResponsibilitySet": [
+                  {
+                    "id": "FR1:ResponsibilitySet:100:LOC",
+                    "version": "any",
+                    "keyList": [
+                      {
+                        "keyValue": [
+                          {
+                            "Key": "CONTRACT_ID",
+                            "Value": "56"
+                          }
+                        ]
+                      }
+                    ],
+                    "Name": "BORD DE L\u0027EAU",
+                    "roles": {
+                      "ResponsibilityRoleAssignment": {
+                        "id": "FR1:ResponsibilityRoleAssignment:100:LOC",
+                        "version": "any",
+                        "TypeOfResponsibilityRoleRef": {
+                          "ref": "FR1:TypeOfResponsibilityRole:1:LOC"
+                        }
+                      }
+                    }
+                  }
+                ],
+                "TypeOfEntity": [
+                  {
+                    "id": "FR1:TypeOfResponsibilityRole:1:LOC",
+                    "version": "any",
+                    "Name": "Contrat d\u0027exploitation adhoc"
+                  }
+                ],
+                "Operator": [
+                  {
+                    "version": "any",
+                    "datasourceref": "FR1:OrganisationalUnit:NMOBI:",
+                    "changed": "2015-04-17T09:30:47.00Z",
+                    "id": "FR1:Operator:67:LOC",
+                    "BrandingRef": {
+                      "ref": "/uploads/ logos/logo.png"
+                    },
+                    "Name": "RATP",
+                    "ContactDetails": {
+                      "ContactPerson": "RATP Service clientèle",
+                      "Email": "relation.client@ratp.fr",
+                      "Phone": "34 24",
+                      "Url": "http://www.ratp.fr/",
+                      "FurtherDetails": "N° gratuit+prix appel"
+                    },
+                    "Address": {
+                      "HouseNumber": "6",
+                      "AddressLine1": "ZI des 50 arpents",
+                      "Street": "square Louis Blanc",
+                      "Town": "Roissy-en-Brie",
+                      "PostCode": "77680",
+                      "PostCodeExtension": "Cedex 12"
+                    }
+                  }
+                ],
+                "SchematicMap": [
+                  {
+                    "version": "any",
+                    "id": "FR1:SchematicMap:1:LOC",
+                    "Name": "Plan ligne 15 PEPS",
+                    "ImageUri": "http://www.site.com/ ligne_peps_15.jpg",
+                    "DepictedObjectRef": {
+                      "version": "any",
+                      "ref": "FR1:Line:C00019:"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "TypeOfFrameRef": "version\u003d\"1.04:FR1-NETEX_COMMUN2.1\"",
+              "members": {
+                "Line": [
+                  {
+                    "version": "any",
+                    "datasourceref": "FR1:OrganisationalUnit:NMOBI:",
+                    "created": "2009-12-02T00:00:00Z",
+                    "changed": "2009-12-02T00:00:00Z",
+                    "status": "active",
+                    "derivedFromObjectRef": "FR1:Line:C02000:",
+                    "id": "FR1:Line:C01070:",
+                    "ValidBetween": {
+                      "FromDate": "2010-01-01T00:00:00"
+                    },
+                    "Name": "MONTMARTROBUS",
+                    "ShortName": "MONTMAR",
+                    "TransportMode": "bus",
+                    "TransportSubmode": {
+                      "BusSubmode": "expressBus"
+                    },
+                    "PublicCode": "259",
+                    "PrivateCode": "100100008",
+                    "OperatorRef": {
+                      "version": "any",
+                      "ref": "FR1:Operator:59:LOC"
+                    },
+                    "additionalOperators": {
+                      "OperatorRef": {
+                        "version": "any",
+                        "ref": "FR1:Operator:65:LOC"
+                      }
+                    },
+                    "TypeOfLineRef": {
+                      "version": "any",
+                      "ref": "REPLACEMENT_LINE_TYPE"
+                    },
+                    "RepresentedByGroupRef": {
+                      "version": "any",
+                      "ref": "FR1:Network:7:LOC"
+                    },
+                    "Presentation": {
+                      "Colour": "66FFFF",
+                      "ColourName": "RVB:102 255 255",
+                      "TextColour": "000000",
+                      "infoLinks": {
+                        "InfoLink": "uploads//pictos/x.png"
+                      }
+                    },
+                    "AlternativePresentation": {
+                      "ColourName": "CMJN:060 020 030 040",
+                      "TextColour": "000000"
+                    },
+                    "AccessibilityAssessment": {
+                      "version": "any",
+                      "id": " FR1:AccessibilityAssessment:C01070:",
+                      "MobilityImpaired": "true",
+                      "limitations": {
+                        "AccessibilityLimitation": {
+                          "VisualSignsAvailable": "unknown"
+                        }
+                      }
+                    },
+                    "noticeAssignments": {
+                      "NoticeAssignment": {
+                        "version": "any",
+                        "ref": "FR1:NoticeAssignment:C01070:",
+                        "order": "0",
+                        "NoticeRef": {
+                          "version": "any",
+                          "ref": "FR1:Notice:C01070:"
+                        }
+                      },
+                      "NoticeAssignmentView": {
+                        "ref": "FR1:NoticeAssignmentView:C01070:",
+                        "order": "0",
+                        "Mark": "Nom fiche horaire",
+                        "UrlMark": "http://www.site.com/fichehoraire.pdf",
+                        "TypeOfNoticeRef": {
+                          "ref": "PDFTimetable"
+                        }
+                      }
+                    }
+                  }
+                ],
+                "GroupOfLines": [
+                  {
+                    "version": "any",
+                    "responsibilitySetRef": "FR1:ResponsibilitySet:100:LOC",
+                    "created": "2009-12-02T00:00:00Z",
+                    "changed": "2009-12-02T00:00:00Z",
+                    "status": "active",
+                    "id": "FR1:GroupOfLines:A00435:",
+                    "keyList": {},
+                    "Name": "LIMOURS (MONUMENT) - ARPAJON (GARE SNCF)",
+                    "PrivateCode": "039039018",
+                    "members": {
+                      "LineRef": {
+                        "ref": "FR1:Line:C00502:"
+                      }
+                    },
+                    "TransportMode": "bus"
+                  }
+                ],
+                "AvailabilityCondition": [
+                  {
+                    "version": "any",
+                    "id": "FR1:AvailabilityCondition:A00435:",
+                    "ConditionedObjectRef": {
+                      "ref": "FR1:GroupOfLines:A00435:"
+                    },
+                    "FromDate": "2009-12-02T00:00:00",
+                    "ToDate": "2017-12-01T00:00:00"
+                  }
+                ],
+                "Network": [
+                  {
+                    "version": "any",
+                    "id": "FR1:Network:71:LOC",
+                    "changed": "2009-12-02T00:00:00Z",
+                    "Name": "network1"
+                  }
+                ],
+                "StopPlace": [
+                  {
+                    "version": "49420-112121",
+                    "dataSourceRef": "FR1-ARRET_AUTO",
+                    "created": "2014-12-29T03:12:51Z",
+                    "changed": "2014-12-29T03:12:51Z",
+                    "id": "FR::monomodalStopPlace:49420:FR1",
+                    "keyList": {
+                      "keyValue": [
+                        {
+                          "Key": "TLB_LIST_ID",
+                          "Value": "RATP_30050180602 RATP_30050180603 SNCF_651101 SNCF_651102"
+                        }
+                      ]
+                    },
+                    "Name": "Place de la Mairie",
+                    "Centroid": {},
+                    "PostalAddress": {
+                      "version": "any",
+                      "id": "FR1:PostalAddress:49420:",
+                      "Town": "Mouroux",
+                      "PostalRegion": "77320"
+                    },
+                    "Landmark": "sous-titre",
+                    "ParentSiteRef": {
+                      "ref": "FR::multimodalStopPlace:67991:FR1"
+                    },
+                    "entrances": {
+                      "StopPlaceEntranceRef": {
+                        "ref": "FR::StopPlaceEntrance:1520:FR1"
+                      }
+                    },
+                    "equipmentPlaces": {
+                      "EquipmentPlaceRef": {
+                        "ref": "FR1:EquipmentPlace:23:"
+                      }
+                    },
+                    "StopPlaceType": "railStation"
+                  }
+                ],
+                "Quay": [
+                  {
+                    "version": "718710-6545",
+                    "dataSourceRef": "FR1:OrganisationalUnit:52:",
+                    "created": "2015-03-03T10:03:39Z",
+                    "changed": "2015-07- 21T09:07:31Z",
+                    "derivedFromObjectRef": "FR::Quay:456646:FR1",
+                    "id": "FR::Quay:50073966:FR1",
+                    "keyList": {
+                      "keyValue": [
+                        {
+                          "Key": "ACS_ID",
+                          "Value": "23"
+                        },
+                        {
+                          "Key": "ACS_NAME",
+                          "Value": "Chateau"
+                        },
+                        {
+                          "Key": "TLB_LIST_ID",
+                          "Value": "RATP_30050180602 RATP_30050180603 SNCF_651101 SNCF_651102"
+                        }
+                      ]
+                    },
+                    "Name": "Place de la Mairie",
+                    "Description": "Aller",
+                    "PrivateCode": "200",
+                    "Centroid": {
+                      "Location": {}
+                    },
+                    "PostalAddress": {
+                      "version": "any",
+                      "id": "FR1:PostalAddress:50073966:",
+                      "AddressLine1": "2 rue de Paris",
+                      "Town": "Mouroux",
+                      "PostalRegion": "77320"
+                    },
+                    "AccessibilityAssessment": {
+                      "version": "any",
+                      "id": "FR1:AccessibilityAssessment:50073966:",
+                      "MobilityImpairedAccess": "unknown",
+                      "limitations": {
+                        "AccessibilityLimitation": {
+                          "WheelchairAccess": "true",
+                          "VisualSignsAvailable": "true"
+                        }
+                      }
+                    },
+                    "TransportMode": "bus",
+                    "tariffZones": {
+                      "TariffZoneRef": {
+                        "ref": "FR1:TariffZone:3:LOC"
+                      }
+                    },
+                    "PublicCode": "3",
+                    "ParentQuayRef": {
+                      "ref": "2"
+                    },
+                    "destinations": {
+                      "DestinationDisplayView": {
+                        "Name": "RATP 12",
+                        "ShortName": "12",
+                        "PrivateCode": "100100012"
+                      }
+                    }
+                  }
+                ],
+                "StopPlaceEntrance": [
+                  {
+                    "version": "257264",
+                    "dataSourceRef": "FR1:organisationunit:59:",
+                    "id": " FR::StopPlaceEntrance:1520:FR1",
+                    "keyList": {
+                      "keyValue": [
+                        {
+                          "Key": "TLB_LIST_ID",
+                          "Value": "RATP_30050180602 RATP_30050180603 SNCF_651101 SNCF_651102"
+                        }
+                      ]
+                    },
+                    "Name": "rue Bidulle",
+                    "ShortName": "1s",
+                    "PrivateCode": "3",
+                    "Centroid": {
+                      "Location": {}
+                    },
+                    "IsEntry": "true",
+                    "IsExit": "true"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+]

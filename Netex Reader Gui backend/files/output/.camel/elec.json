@@ -1,0 +1,12 @@
+{"root": {
+    "modelVersion": "blablabla",
+    "isConnected": true,
+    "channel": "chanel0",
+    "id": 1,
+    "LogicalDeviceName": "bla",
+    "armrRouter": "router1",
+    "type": "elec",
+    "firmwareVersion": "blabla",
+    "deviceName": "bla",
+    "status": "active"
+}}

@@ -16,10 +16,14 @@ import { delay } from 'rxjs/operators';
 export class AuthenticationServiceService {
   private token: string | undefined | null;
   private isAuthenticated = false;
+  private isAdmin = false;
+  private isUser = false;
   private apiServerUrl = environment.apiBaseUrl;
   private tokenTimer: any;
   private roles: any;
   private authStatusListener = new Subject<boolean>();
+  private adminStatusListener = new Subject<boolean>();
+  private userStatusListener = new Subject<boolean>();
   tokenSubscription = new Subscription();
 
   constructor(private http: HttpClient, private router: Router, public jwtHelper: JwtHelperService) { }
@@ -31,14 +35,32 @@ export class AuthenticationServiceService {
   getIsAuth() {
     return this.isAuthenticated;
   }
+  getIsAdmin() {
+    const token1 = this.jwtHelper.decodeToken(localStorage.getItem('token'));
+            if( token1.roles.includes("ROLE_ADMIN")){
+              this.isAdmin=true;}
+    return this.isAdmin;
+  }
+  getIsUser() {
+    const token1 = this.jwtHelper.decodeToken(localStorage.getItem('token'));
+            if( token1.roles.includes("ROLE_USER")){
+              this.isUser=true;}
+    return this.isUser;
+  }
   getAuthStatusListener() {
     return this.authStatusListener.asObservable();
   }
 
+  getAdminStatusListener() {
+    return this.adminStatusListener.asObservable();
+  }
+
+  getUserStatusListener() {
+    return this.userStatusListener.asObservable();
+  }
+
   public isUserAuthenticated(): boolean {
     const token = localStorage.getItem('token');
-    // Check whether the token is expired and return
-    // true or false
     return !this.jwtHelper.isTokenExpired(token);
   }
 
@@ -60,9 +82,17 @@ export class AuthenticationServiceService {
           if (token) {
             this.isAuthenticated = true;
             }
-            console.log(this.isAuthenticated);
+            //console.log(this.isAuthenticated);
             this.saveAuthData(token);
-            this.authStatusListener.next(true);
+            this.authStatusListener.next(true);  
+            const token1 = this.jwtHelper.decodeToken(localStorage.getItem('token'));
+            if( token1.roles.includes("ROLE_ADMIN")){
+              this.isAdmin=true;
+              this.adminStatusListener.next(true);
+            }else if(token1.roles.includes("ROLE_USER")){
+              this.isUser= true;
+              this.userStatusListener.next(true);
+             }
             const timeout = this.jwtHelper.getTokenExpirationDate(token).valueOf() - new Date().valueOf();
             console.log(timeout);
             this.expirationCounter(timeout);
@@ -70,8 +100,8 @@ export class AuthenticationServiceService {
             // decode the token to get its payload
             // let tokenPayload = decode(token);
             // console.log(tokenPayload);
-            const token1 = this.jwtHelper.decodeToken(localStorage.getItem('token'));
-            console.log(token1.roles);
+            
+            //console.log(token1.roles);
             this.router.navigate(['home']);
         });
   }
@@ -91,6 +121,8 @@ export class AuthenticationServiceService {
     this.tokenSubscription.unsubscribe();
     this.isAuthenticated = false;
     this.authStatusListener.next(false);
+    this.adminStatusListener.next(false);
+    this.userStatusListener.next(false);
     clearTimeout(this.tokenTimer);
     this.clearAuthData();
     this.router.navigate(["/"]);

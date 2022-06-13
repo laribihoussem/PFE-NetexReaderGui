@@ -1,11 +1,24 @@
 
-b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(«Ñ›ª
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(«Ñ›ª
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(·òŒÛüÿÿÿÿ
 d
-java:S20951"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(Âî¢·
+java:S2095l"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(Âî¢·
 d
-java:S2095V"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(Âî¢·
+java:S20955"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(Âî¢·
+X	java:S125%"<This block of commented-out lines of code should be removed.(èÑãž8µà•Õ‘0
 e
-java:S2674'"JCheck the return value of the "read" call to see how many bytes were read.(€ÖŽ¨ÿÿÿÿÿ
+java:S2674+"JCheck the return value of the "read" call to see how many bytes were read.(€ÖŽ¨ÿÿÿÿÿ
+G
+java:S1602J",Remove useless curly braces around statement(°·‹Òýÿÿÿÿ
+c
+java:S1612J"HReplace this lambda with method reference 'csvSchemaBuilder::addColumn'.(°·‹Òýÿÿÿÿ
+P	java:S125S"<This block of commented-out lines of code should be removed.(ƒÁé
+X	java:S125Z"<This block of commented-out lines of code should be removed.(èÑãž8Ë§–Õ‘0
 e
-java:S2674J"JCheck the return value of the "read" call to see how many bytes were read.(€ÖŽ¨ÿÿÿÿÿ
+java:S2674`"JCheck the return value of the "read" call to see how many bytes were read.(€ÖŽ¨ÿÿÿÿÿ
+n
+java:S1128"LRemove this unused import 'org.springframework.web.multipart.MultipartFile'.(ôŸœžÿÿÿÿÿ8Ø§–Õ‘0
+M
+java:S1128"0Remove this unused import 'java.nio.file.Files'.(‚ƒü8Ø§–Õ‘0
+L
+java:S1128"/Remove this unused import 'java.nio.file.Path'.(×²êÂ8Ù§–Õ‘0

@@ -1,5 +1,7 @@
 package com.Netex.Reader.Gui.camel.routes;
 
+import com.Netex.Reader.Gui.service.GlobaleServiceImpl;
+import com.Netex.Reader.Gui.service.toCsv;
 import org.apache.camel.Predicate;
 import org.apache.camel.builder.PredicateBuilder;
 import org.apache.camel.builder.RouteBuilder;
@@ -40,7 +42,7 @@ public class FileRoute extends RouteBuilder {
 
         from("file:files/input?delete=true")
                 .description("converting files")
-                .delay(simple("${random(10000,20000)}"))
+                .delay(simple("${random(2000,5000)}"))
                 .setProperty("RouteName", simple("converting files"))
                 .doTry()
                 .routeId("1")
@@ -76,41 +78,42 @@ public class FileRoute extends RouteBuilder {
         from("file:files/output")
                 .description("sending Files via SFTP and messages to kafka")
                 .setProperty("RouteName", simple("Sending File via SFTP and message to kafka"))
-                .doTry()
+                .delay(simple("${random(3000,5000)}"))
+                /*.doTry()*/
                 .routeId("Sending")
                 .to("bean:GlobalService?method=setHeader")
                 .choice()
-                .when(SNCF)
-                    .to("sftp://tester@192.168.1.8:2222//RebexTinySftpServer//data//SNCF?password=password")
-                    .to("bean:GlobalService?method=send")
-                    .to("kafka:SNCF?brokers=localhost:9092")
-                .when(STIF)
-                    .to("sftp://tester@192.168.1.8:2222//RebexTinySftpServer//data//STIF?password=password")
-                    .to("bean:GlobalService?method=send")
-                    .to("kafka:STIF?brokers=localhost:9092")
-                .when(RATP)
-                    .to("sftp://tester@192.168.1.8:2222//RebexTinySftpServer//data//RATP?password=password")
-                    .to("bean:GlobalService?method=send")
-                    .to("kafka:RATP?brokers=localhost:9092")
-                .otherwise().log("Something is not correct" )
+                    .when(SNCF)
+                        .to("sftp://tester@192.168.1.12:2222//RebexTinySftpServer//data//SNCF?password=password")
+                        .to("bean:GlobalService?method=send")
+                        .to("kafka:SNCF?brokers=localhost:9092")
+                    .when(STIF)
+                        .to("sftp://tester@192.168.1.12:2222//RebexTinySftpServer//data//STIF?password=password")
+                        .to("bean:GlobalService?method=send")
+                        .to("kafka:STIF?brokers=localhost:9092")
+                    .when(RATP)
+                        .to("sftp://tester@192.168.1.12:2222//RebexTinySftpServer//data//RATP?password=password")
+                        .to("bean:GlobalService?method=send")
+                        .to("kafka:RATP?brokers=localhost:9092")
+                    .otherwise().log("Something is not correct" )
                 .end()
-                .to("bean:GlobalService?method=sendStatus")
-                .endDoTry()
+                .to("bean:GlobalService?method=sendStatus");
+                /*.endDoTry()
                 .doCatch(Exception.class)
-                .log("Something went wrong");
-        /*from("file:files/RATP")
-                .doTry()
-                .description("Sending RATP File via SFTP")
-                .to("sftp://tester@192.168.1.8:2222//RebexTinySftpServer//data//RATP?password=password")
-                .endDoTry()
-                .doCatch(Exception.class)
-                .log("Something went wrong")
-                .doFinally().to("bean:GlobalService?method=sendStatus");;
-        from("file:files/SNCF")
-                .description("Sending SNCF File via SFTP")
-                .to("sftp://tester@192.168.1.8:2222//RebexTinySftpServer-Binaries-Latest//data?password=password");
-        from("file:files/STIF")
-                .description("Sending STIF File via SFTP")
-                .to("sftp://tester@192.168.1.8:2222//RebexTinySftpServer-Binaries-Latest//data?password=password");*/
+                .log("Something went wrong");*/
+
+        from("kafka:RATP?brokers=localhost:9092")
+                .bean(GlobaleServiceImpl.class, "notify1");
+        from("kafka:SNCF?brokers=localhost:9092")
+                .bean(GlobaleServiceImpl.class, "notify1");
+        from("kafka:STIF?brokers=localhost:9092")
+                .bean(GlobaleServiceImpl.class, "notify1");
+
+
+        from("file:files/RATP")
+                .bean(toCsv.class, "convert");
+
+
+
     }
 }

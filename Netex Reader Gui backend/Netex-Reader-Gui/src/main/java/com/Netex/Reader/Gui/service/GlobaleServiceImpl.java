@@ -10,10 +10,13 @@ import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.camel.Exchange;
 import org.apache.camel.component.kafka.KafkaConstants;
+import org.springframework.messaging.simp.SimpMessageSendingOperations;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.io.File;
+import java.util.HashMap;
+import java.util.Map;
 
 @AllArgsConstructor
 @Transactional
@@ -24,7 +27,13 @@ public class GlobaleServiceImpl implements GlobaleService{
     private final FileRepo fileRepo;
     private  final ConvertedFileRepo convertedFileRepo;
     private final RoutesRepo routesRepo;
+    private SimpMessageSendingOperations messagingTemplate;
 
+
+
+    /*
+    *Send Message to kafka
+    */
     @Override
     public String send(Exchange exchange) {
         File file=exchange.getIn().getBody(File.class);
@@ -32,25 +41,29 @@ public class GlobaleServiceImpl implements GlobaleService{
         return "http://localhost:8090/"+file.getName();
     }
 
+
+    /*
+     *Set header for apache Camel
+     */
     public void setHeader(Exchange exchange) {
         File file = exchange.getIn().getBody(File.class);
         String name = file.getName();
-        //log.info(name);
         ConvertedFile file1 = convertedFileRepo.getConvertedFileByName(name);
         com.Netex.Reader.Gui.models.File file2= file1.getFile();
-        //com.Netex.Reader.Gui.models.File file2 = fileRepo.getFileByName(name);
         Destination dest = file2.getDestination();
         String destName= dest.getName();
         exchange.setProperty("destination", destName);
     }
 
+
+    /*
+     *Send status to database
+     */
     @Override
     public void sendStatus(Exchange exchange) {
         String routeName = exchange.getProperty("RouteName", String.class);
-        log.info(routeName);
         File file = exchange.getIn().getBody(File.class);
         String fileName = file.getName();
-        log.info(fileName);
         Routes route = routesRepo.findRoutesByRouteName(routeName);
         if(routeName.equals("converting files")){
             com.Netex.Reader.Gui.models.File file1 = fileRepo.getFileByName(fileName);
@@ -59,9 +72,23 @@ public class GlobaleServiceImpl implements GlobaleService{
             ConvertedFile cf = convertedFileRepo.getConvertedFileByName(fileName);
             cf.getFile().getRoutes().add(route);
         }
+    }
 
 
 
-
+    /*
+     *Sending notification
+     */
+    private Map<String, String> progress = new HashMap<String, String>();
+    public void notify1(Exchange exchange) {
+        String fileName= (String) exchange.getIn().getHeaders().get(KafkaConstants.KEY);
+        String link = exchange.getIn().getBody(String.class);
+        progress.put("file Name", fileName);
+        progress.put("link", link);
+        ConvertedFile f1= convertedFileRepo.getConvertedFileByName(fileName);
+        long id = f1.getFile().getUsers().getId();
+        progress.put("id", String.valueOf(id));
+        log.info(link);
+        messagingTemplate.convertAndSend("/topic/progress", this.progress);
     }
 }

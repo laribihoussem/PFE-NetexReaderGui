@@ -1,0 +1,7 @@
+
+Z	java:S1128"FDefine and throw a dedicated exception instead of using a generic one.(ÄãE
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(·òŒÛüÿÿÿÿ
+r
+java:S3655s"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(†ÛÜéøÿÿÿÿ8‰œ0
+r
+java:S3655l"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(†ÛÜéøÿÿÿÿ8’Ç„œ0

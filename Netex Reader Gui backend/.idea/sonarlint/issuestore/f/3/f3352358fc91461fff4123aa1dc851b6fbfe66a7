@@ -1,0 +1,8 @@
+
+o
+java:S22933"YReplace the type specification in this constructor call with the diamond operator ("<>").(õ¢Ê™
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(†ö×
+D
+java:S1948/"'Make "roles" transient or serializable.(ÁÀö»8 ú›0
+D
+java:S19483"'Make "files" transient or serializable.(õ¢Ê™8¡ú›0

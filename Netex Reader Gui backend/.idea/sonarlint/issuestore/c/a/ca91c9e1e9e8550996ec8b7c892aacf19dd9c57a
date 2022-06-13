@@ -1,0 +1,36 @@
+
+g
+java:S1192"LDefine a constant instead of duplicating this literal "destination" 3 times.(²ÊË×úÿÿÿÿ
+z
+java:S1192X"_Define a constant instead of duplicating this literal "bean:GlobalService?method=send" 3 times.(ÖÙ€Íüÿÿÿÿ
+h
+java:S1192"MDefine a constant instead of duplicating this literal "outputFormat" 3 times.(ÂòÜııÿÿÿÿ
+c
+java:S1192j"HDefine a constant instead of duplicating this literal "notify1" 3 times.(‚ìæÔüÿÿÿÿ
+g
+java:S1192"LDefine a constant instead of duplicating this literal "inputFormat" 4 times.(ÁËÒ®øÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²ÊË×úÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³íæşøÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•µ†òÿÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(òŒ»Çùÿÿÿÿ
+p
+java:S3252"UUse static access with "org.apache.camel.support.builder.PredicateBuilder" for "and".(¹ºÆ’üÿÿÿÿ
+k
+java:S3252"UUse static access with "org.apache.camel.support.builder.PredicateBuilder" for "and".(ªôÄ¨
+j
+java:S3252"UUse static access with "org.apache.camel.support.builder.PredicateBuilder" for "and".(×ŸÚ.
+p
+java:S3252"UUse static access with "org.apache.camel.support.builder.PredicateBuilder" for "and".(÷‹ôäûÿÿÿÿ
+k
+java:S3252"UUse static access with "org.apache.camel.support.builder.PredicateBuilder" for "and".(äÖåØ
+p
+java:S3252"UUse static access with "org.apache.camel.support.builder.PredicateBuilder" for "and".(ëßÛúÿÿÿÿ
+p
+java:S3252 "UUse static access with "org.apache.camel.support.builder.PredicateBuilder" for "and".(Œ‡Ü·üÿÿÿÿ
+p
+java:S3252!"UUse static access with "org.apache.camel.support.builder.PredicateBuilder" for "and".(½ÙÕØøÿÿÿÿ
+k
+java:S3252""UUse static access with "org.apache.camel.support.builder.PredicateBuilder" for "and".(½å¾Ì
+V	java:S125%"<This block of commented-out lines of code should be removed.(·Ø¼şÿÿÿÿ
+V	java:S125'"<This block of commented-out lines of code should be removed.(òØµĞøÿÿÿÿ
+Q	java:S125g"<This block of commented-out lines of code should be removed.(åâ¨Î

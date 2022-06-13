@@ -100,8 +100,6 @@ onVisualizeFile() {
       toast.addEventListener('mouseleave', Swal.resumeTimer)
     }
   })
-  
-  
    console.log(this.files[0]);
    this.fileService.upload(this.files[0] ,this.actualUser.id, this.radioData,this.radioDataOutput, this.radioDestination).subscribe(
     (response: any) => {

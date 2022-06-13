@@ -3,6 +3,10 @@ package com.Netex.Reader.Gui.service;
 import com.Netex.Reader.Gui.models.ConvertedFile;
 import com.Netex.Reader.Gui.repository.ConvertedFileRepo;
 import com.Netex.Reader.Gui.repository.FileRepo;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.csv.CsvMapper;
+import com.fasterxml.jackson.dataformat.csv.CsvSchema;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.camel.Exchange;
@@ -30,7 +34,7 @@ public class toCsv {
     public void jsonToCsv(Exchange exchange) throws IOException {
         File file = exchange.getIn().getBody(File.class);
         String name = file.getName();
-        log.info(name);
+        //log.info(name);
         File convFile=null;
         Charset charset = StandardCharsets.UTF_8;
         try (InputStream in = new FileInputStream(file))
@@ -62,10 +66,28 @@ public class toCsv {
         }
     }
 
+
+    public void convert(File srcFile) throws IOException {
+        JsonNode jsonTree = new ObjectMapper().readTree(new File(srcFile.getPath()));
+        CsvSchema.Builder csvSchemaBuilder = CsvSchema.builder();
+        JsonNode firstObject = jsonTree.elements().next();
+        firstObject.fieldNames().forEachRemaining(fieldName -> {csvSchemaBuilder.addColumn(fieldName);} );
+        CsvSchema csvSchema = csvSchemaBuilder.build().withHeader();
+        String filename = srcFile.getName();
+        filename = filename.substring(0, filename.lastIndexOf(".json")) + ".csv";
+        File targetFile = new File("files/SNCF/"+filename);
+        CsvMapper csvMapper = new CsvMapper();
+        csvMapper.writerFor(JsonNode.class)
+                .with(csvSchema)
+                .writeValue(targetFile, jsonTree);
+        //log.info(targetFil));
+
+    }
+
     public void xmlToCsv(Exchange exchange) throws IOException {
         File file = exchange.getIn().getBody(File.class);
         String name = file.getName();
-        log.info(name);
+        //log.info(name);
         File convFile=null;
         Charset charset = StandardCharsets.UTF_8;
         try (InputStream in = new FileInputStream(file))

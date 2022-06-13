@@ -10,7 +10,8 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { SidebarModule } from "ng-sidebar";
 import { ChartsModule } from 'ng2-charts';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { RxStompService  } from '@stomp/ng2-stompjs';
+import { ProgressWebsocketService } from './service/websocketService/progress.websocket.service';
 
 
 
@@ -84,7 +85,9 @@ import { FileByRouteComponent } from './components/monitoring/file-by-route/file
    // ToastrModule added
   ],
   providers: [
-    {provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true}
+    {provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true},
+    RxStompService,
+    ProgressWebsocketService
   ],
   bootstrap: [AppComponent]
 })
